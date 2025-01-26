@@ -1,0 +1,92 @@
+/* Supprime les marges et paddings globaux */
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: gainsboro; /* Arrière-plan global */
+  }
+  
+  /* Header : configuration de la barre */
+  /* Header : configuration de la barre */
+    header {
+        background-color: #ffffff;
+        padding: 10px 20px; /* Ajoute un padding vertical pour aérer */
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        justify-content: space-between; /* Sépare le logo et le menu */
+        align-items: center; /* Centre verticalement le contenu */
+        height: auto; /* Hauteur dynamique basée sur le contenu */
+        min-height: 70px; /* Assure une hauteur minimale pour éviter un écrasement */
+    }
+  
+  /* Style du logo */
+  .logo-container img {
+    max-height: 75px; /* Ajuste la taille du logo */
+  }
+  
+  /* La div qui contient la navigation (pour centrer indépendamment du logo) */
+  .nav-center {
+    position: absolute; /* Position absolue par rapport à la page */
+    left: 50%; /* Point de départ à 50% de la largeur de la page */
+    transform: translateX(-50%); /* Centre horizontalement le contenu */
+  }
+  
+  /* Style de la liste des liens */
+  .main-nav ul {
+    display: flex; /* Place les items sur une ligne */
+    gap: 30px; /* Espacement entre les liens */
+    list-style: none; /* Supprime les puces */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style des liens */
+  .main-nav li {
+    position: relative; /* Nécessaire pour positionner le triangle */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FF6600; /* Couleur orange */
+    cursor: pointer;
+  }
+  
+  /* Triangle orange caché sous les liens */
+  .main-nav li .triangle {
+    position: absolute;
+    bottom: -15px; /* Place le triangle au-dessus du texte */
+    left: 50%; /* Centre horizontalement */
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 7.5px solid transparent; /* Bords latéraux transparents */
+    border-right: 7.5px solid transparent;
+    border-bottom: 13px solid #FF6600; /* Triangle orange qui pointe vers le haut */
+    opacity: 0; /* Caché initialement */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+  
+  /* Affiche le triangle au survol */
+  .main-nav li:hover .triangle {
+    opacity: 1;
+  }
+
+  /* Style des liens par défaut */
+.main-nav a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: #FF6600; /* Couleur orange */
+    font-weight: bold;
+}
+
+/* Style pour les liens visités */
+.main-nav a:visited {
+    color: #FF6600 !important;
+    text-decoration: none !important;
+}
+
+/* Style actif (au moment du clic) */
+.main-nav a:active {
+    color: #CC5500; /* Couleur légèrement plus sombre lors du clic */
+    text-decoration: none;
+}
