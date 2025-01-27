@@ -1,0 +1,150 @@
+/* Supprime les marges et paddings globaux */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Bandeau d'accueil */
+header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo-container img {
+    max-height: 75px;
+}
+
+.nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav li {
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FF6600;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #FF6600;
+}
+
+.main-nav a:hover {
+    text-decoration: none;
+    color: #FF4500;
+}
+
+.main-nav li .triangle {
+    position: absolute;
+    bottom: -17.5px; /* Place le triangle au-dessus du texte */
+    left: 50%; /* Centre horizontalement */
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 7.5px solid transparent; /* Bords latéraux transparents */
+    border-right: 7.5px solid transparent;
+    border-bottom: 13px solid #FF6600; /* Triangle orange qui pointe vers le haut */
+    opacity: 0; /* Caché initialement */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.main-nav li:hover .triangle {
+    opacity: 1;
+}
+
+/* Conteneur principal */
+.container {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 70px); /* Hauteur totale de l'écran moins le bandeau */
+}
+
+/* Zone gauche : Sommaire */
+.sidebar {
+    width: 20%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 70%;
+    margin-top: auto;
+    margin-bottom: auto;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* Zone centrale */
+.main-content {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 0 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.main-content h2 {
+    font-size: 20px;
+}
+
+/* Zone droite : Dernière ressource */
+.preview {
+    width: 25%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 70%;
+    margin-top: auto;
+    margin-bottom: auto;
+    overflow-y: auto;
+}
+
+.preview h2 {
+    font-size: 18px;
+}   
+
+.preview a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.preview a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
