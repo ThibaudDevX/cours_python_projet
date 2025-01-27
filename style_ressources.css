@@ -145,7 +145,7 @@ header {
 }
 
 .preview a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: #0056b3;
 }
 
@@ -184,4 +184,64 @@ header {
 .main-content a:hover::after {
     opacity: 1; /* Le triangle devient visible */
     transform: translateY(-50%) translateX(-2px); /* Déplace légèrement le triangle vers le lien */
+}
+
+.preview ul {
+    list-style: none; /* Supprime les puces */
+    padding: 0;
+    margin: 0;
+}
+
+.preview li {
+    margin-bottom: 10px; /* Espace entre les liens */
+}
+
+/* Liens de la zone de droite */
+.preview a {
+    position: relative;
+    text-decoration: none; /* Supprime le soulignement par défaut */
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Assure que le lien reste sans soulignement au survol */
+.preview a:hover {
+    text-decoration: none !important; /* Supprime complètement le soulignement */
+    color: #0056b3; /* Change seulement la couleur */
+}
+
+.preview a::after {
+    content: ""; /* Contenu vide pour le triangle */
+    position: absolute;
+    top: 50%; /* Centre verticalement */
+    left: 100%; /* Positionne le triangle à droite du lien */
+    margin-left: 10px; /* Espace entre le lien et le triangle */
+    transform: translateY(-50%); /* Aligne correctement */
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent; /* Triangle sans bord supérieur */
+    border-bottom: 6px solid transparent; /* Triangle sans bord inférieur */
+    border-right: 12px solid #FF6600; /* Triangle orange pointant vers la gauche */
+    opacity: 0; /* Caché par défaut */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Animation douce */
+}
+
+.preview a:hover::after {
+    opacity: 1; /* Le triangle devient visible */
+    transform: translateY(-50%) translateX(-2px); /* Déplace légèrement le triangle vers le lien */
+}
+
+/* Indentation des liens dans la liste centrale */
+.main-content ul {
+    list-style: none; /* Supprime les puces */
+    padding: 0;
+    margin: 0;
+}
+
+.main-content li {
+    margin-bottom: 10px; /* Ajoute de l'espace entre les éléments */
+    padding-left: 30px; /* Décale le texte vers la droite */
+    text-indent: -10px; /* Ajuste l'alignement si nécessaire */
+    position: relative; /* Nécessaire pour ajouter un effet de décoration */
 }

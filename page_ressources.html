@@ -114,7 +114,38 @@
         const links = document.querySelectorAll('.main-content a');
     
         // Sélectionne la zone de prévisualisation (droite)
-        const previewArea = document.querySelector('.preview p');
+        const previewArea = document.querySelector('.preview');
+    
+        // Tableau pour stocker l'historique des liens cliqués
+        const history = [];
+    
+        // Fonction pour mettre à jour l'historique
+        function updatePreview() {
+            // Vide la zone de prévisualisation
+            previewArea.innerHTML = '<h2>Historique des ressources ouvertes</h2>';
+            const list = document.createElement('ul');
+            list.style.listStyle = 'none'; // Pas de puces
+            list.style.padding = '0';
+    
+            // Parcourt l'historique et ajoute les liens dans la liste
+            history.forEach(link => {
+                const listItem = document.createElement('li');
+                const anchor = document.createElement('a');
+                anchor.href = link.href;
+                anchor.target = '_blank'; // Ouvre dans un nouvel onglet
+                anchor.textContent = link.text;
+                anchor.style.color = '#007bff'; // Style pour le lien
+                anchor.style.textDecoration = 'none';
+                anchor.style.fontWeight = 'bold';
+                anchor.onmouseover = () => (anchor.style.textDecoration = 'underline');
+                anchor.onmouseout = () => (anchor.style.textDecoration = 'none');
+                listItem.appendChild(anchor);
+                list.appendChild(listItem);
+            });
+    
+            // Ajoute la liste à la zone de prévisualisation
+            previewArea.appendChild(list);
+        }
     
         // Ajoute un événement "click" à chaque lien
         links.forEach(link => {
@@ -122,10 +153,21 @@
                 const clickedText = this.textContent; // Récupère le texte du lien
                 const clickedHref = this.href; // Récupère le lien
     
-                // Mets à jour le contenu dans la zone de droite
-                previewArea.innerHTML = `<strong>${clickedText}</strong><br><a href="${clickedHref}" target="_blank">${clickedHref}</a>`;
+                // Ajoute le lien à l'historique
+                history.unshift({ text: clickedText, href: clickedHref });
+    
+                // Limite la taille de l'historique à ce que la zone peut afficher
+                if (history.length > 15) {
+                    history.pop(); // Supprime l'élément le plus ancien
+                }
+    
+                // Met à jour la zone de prévisualisation
+                updatePreview();
             });
         });
+    
+        // Initialise la zone avec un message par défaut
+        updatePreview();
     </script>
 </body>
 </html>
