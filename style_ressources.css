@@ -148,3 +148,40 @@ header {
     text-decoration: underline;
     color: #0056b3;
 }
+
+/* Styles pour les liens de la zone centrale */
+.main-content a {
+    position: relative; /* Nécessaire pour positionner le triangle */
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Changement de couleur au survol */
+.main-content a:hover {
+    color: #0056b3;
+}
+
+/* Triangle à gauche des liens (invisible par défaut) */
+.main-content a::after {
+    content: ""; /* Contenu vide pour le triangle */
+    position: absolute;
+    top: 50%; /* Centre verticalement */
+    left: 100%; /* Positionne le triangle à droite du lien */
+    margin-left: 10px; /* Espace entre le lien et le triangle */
+    transform: translateY(-50%); /* Aligne correctement */
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent; /* Triangle sans bord supérieur */
+    border-bottom: 6px solid transparent; /* Triangle sans bord inférieur */
+    border-right: 12px solid #FF6600; /* Triangle orange pointant vers la gauche */
+    opacity: 0; /* Caché par défaut */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Animation douce */
+}
+
+/* Affiche le triangle au survol */
+.main-content a:hover::after {
+    opacity: 1; /* Le triangle devient visible */
+    transform: translateY(-50%) translateX(-2px); /* Déplace légèrement le triangle vers le lien */
+}
