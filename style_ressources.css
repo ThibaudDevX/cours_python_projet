@@ -1,10 +1,13 @@
-/* Supprime les marges et paddings globaux */
+/* Global styles */
 html, body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: gainsboro;
     color: #333;
+    height: 100%; /* Assure que le contenu reste dans les limites de la fenêtre */
+    overflow-y: hidden; /* Supprime l'ascenseur vertical */
+    scroll-behavior: smooth; /* Active un défilement fluide */
 }
 
 /* Bandeau d'accueil */
@@ -14,6 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 70px; /* Hauteur minimale */
     border-bottom: 1px solid #ccc;
 }
 
@@ -39,30 +43,29 @@ header {
     position: relative;
     font-size: 16px;
     font-weight: bold;
-    color: #FF6600;
 }
 
 .main-nav a {
     text-decoration: none;
     color: #FF6600;
+    transition: color 0.3s ease;
 }
 
 .main-nav a:hover {
-    text-decoration: none;
     color: #FF4500;
 }
 
 .main-nav li .triangle {
     position: absolute;
-    bottom: -17.5px; /* Place le triangle au-dessus du texte */
-    left: 50%; /* Centre horizontalement */
+    bottom: -17.5px;
+    left: 50%;
     transform: translateX(-50%);
     width: 0;
     height: 0;
-    border-left: 7.5px solid transparent; /* Bords latéraux transparents */
+    border-left: 7.5px solid transparent;
     border-right: 7.5px solid transparent;
-    border-bottom: 13px solid #FF6600; /* Triangle orange qui pointe vers le haut */
-    opacity: 0; /* Caché initialement */
+    border-bottom: 13px solid #FF6600;
+    opacity: 0;
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -74,7 +77,7 @@ header {
 .container {
     display: flex;
     flex-direction: row;
-    height: calc(100vh - 70px); /* Hauteur totale de l'écran moins le bandeau */
+    height: calc(100vh - 70px);
 }
 
 /* Zone gauche : Sommaire */
@@ -84,8 +87,7 @@ header {
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     height: 70%;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto 0;
     overflow-y: auto;
 }
 
@@ -97,15 +99,23 @@ header {
 .sidebar ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
 }
 
 .sidebar a {
     text-decoration: none;
-    color: #007bff;
+    color: #FF6600;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 .sidebar a:hover {
-    text-decoration: underline;
+    color: #d95700;
+    text-decoration: underline; /* Facultatif */
 }
 
 /* Zone centrale */
@@ -122,126 +132,106 @@ header {
     font-size: 20px;
 }
 
-/* Zone droite : Dernière ressource */
+.main-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-content li {
+    margin-bottom: 10px;
+    padding-left: 30px;
+    text-indent: -10px;
+    position: relative;
+}
+
+.main-content a {
+    position: relative;
+    text-decoration: none;
+    color: #FF6600;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.main-content a:hover {
+    color: #d95700;
+}
+
+.main-content a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-left: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 12px solid #FF6600;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.main-content a:hover::after {
+    opacity: 1;
+    transform: translateY(-50%) translateX(-2px);
+}
+
+/* Zone droite : Historique */
 .preview {
     width: 25%;
     background-color: #ffffff;
     padding: 20px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
     height: 70%;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto 0;
     overflow-y: auto;
 }
 
 .preview h2 {
     font-size: 18px;
-}   
-
-.preview a {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-}
-
-.preview a:hover {
-    text-decoration: none;
-    color: #0056b3;
-}
-
-/* Styles pour les liens de la zone centrale */
-.main-content a {
-    position: relative; /* Nécessaire pour positionner le triangle */
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-/* Changement de couleur au survol */
-.main-content a:hover {
-    color: #0056b3;
-}
-
-/* Triangle à gauche des liens (invisible par défaut) */
-.main-content a::after {
-    content: ""; /* Contenu vide pour le triangle */
-    position: absolute;
-    top: 50%; /* Centre verticalement */
-    left: 100%; /* Positionne le triangle à droite du lien */
-    margin-left: 10px; /* Espace entre le lien et le triangle */
-    transform: translateY(-50%); /* Aligne correctement */
-    width: 0;
-    height: 0;
-    border-top: 6px solid transparent; /* Triangle sans bord supérieur */
-    border-bottom: 6px solid transparent; /* Triangle sans bord inférieur */
-    border-right: 12px solid #FF6600; /* Triangle orange pointant vers la gauche */
-    opacity: 0; /* Caché par défaut */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Animation douce */
-}
-
-/* Affiche le triangle au survol */
-.main-content a:hover::after {
-    opacity: 1; /* Le triangle devient visible */
-    transform: translateY(-50%) translateX(-2px); /* Déplace légèrement le triangle vers le lien */
 }
 
 .preview ul {
-    list-style: none; /* Supprime les puces */
+    list-style: none;
     padding: 0;
     margin: 0;
 }
 
 .preview li {
-    margin-bottom: 10px; /* Espace entre les liens */
+    margin-bottom: 10px;
 }
 
-/* Liens de la zone de droite */
 .preview a {
     position: relative;
-    text-decoration: none; /* Supprime le soulignement par défaut */
-    color: #007bff;
+    text-decoration: none;
+    color: #FF6600;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
-/* Assure que le lien reste sans soulignement au survol */
 .preview a:hover {
-    text-decoration: none !important; /* Supprime complètement le soulignement */
-    color: #0056b3; /* Change seulement la couleur */
+    color: #d95700;
 }
 
 .preview a::after {
-    content: ""; /* Contenu vide pour le triangle */
+    content: "";
     position: absolute;
-    top: 50%; /* Centre verticalement */
-    left: 100%; /* Positionne le triangle à droite du lien */
-    margin-left: 10px; /* Espace entre le lien et le triangle */
-    transform: translateY(-50%); /* Aligne correctement */
+    top: 50%;
+    left: 100%;
+    margin-left: 10px;
+    transform: translateY(-50%);
     width: 0;
     height: 0;
-    border-top: 6px solid transparent; /* Triangle sans bord supérieur */
-    border-bottom: 6px solid transparent; /* Triangle sans bord inférieur */
-    border-right: 12px solid #FF6600; /* Triangle orange pointant vers la gauche */
-    opacity: 0; /* Caché par défaut */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Animation douce */
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 12px solid #FF6600;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .preview a:hover::after {
-    opacity: 1; /* Le triangle devient visible */
-    transform: translateY(-50%) translateX(-2px); /* Déplace légèrement le triangle vers le lien */
-}
-
-/* Indentation des liens dans la liste centrale */
-.main-content ul {
-    list-style: none; /* Supprime les puces */
-    padding: 0;
-    margin: 0;
-}
-
-.main-content li {
-    margin-bottom: 10px; /* Ajoute de l'espace entre les éléments */
-    padding-left: 30px; /* Décale le texte vers la droite */
-    text-indent: -10px; /* Ajuste l'alignement si nécessaire */
-    position: relative; /* Nécessaire pour ajouter un effet de décoration */
+    opacity: 1;
+    transform: translateY(-50%) translateX(-2px);
 }

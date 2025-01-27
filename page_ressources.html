@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <title>Ressources</title>
     <link rel="stylesheet" href="style_ressources.css">
+    <style>
+        /* Pour un défilement fluide */
+        .main-content {
+            scroll-behavior: smooth; /* Ajoute un défilement fluide */
+            max-height: 80vh; /* Limite la hauteur de la zone centrale */
+            overflow-y: auto; /* Ajoute un ascenseur uniquement pour la zone centrale */
+        }
+    </style>
 </head>
 <body>
     <!-- Bandeau d'accueil -->
     <header>
         <div class="logo-container">
-            <a href="page_acceuil.html">
+            <a href="page_accueil.html">
                 <img src="/assets/logoUGA.png" alt="Logo UGA">
             </a>
         </div>
@@ -21,11 +29,11 @@
                         <span class="triangle"></span>
                     </li>
                     <li>
-                        <a href="page_cours.html">COURS</a>
+                        <a href="/page_cours.html">COURS</a>
                         <span class="triangle"></span>
                     </li>
                     <li>
-                        <a href="page_ressources.html">RESSOURCES</a>
+                        <a href="/page_ressources.html">RESSOURCES</a>
                         <span class="triangle"></span>
                     </li>
                 </ul>
@@ -39,68 +47,100 @@
         <aside class="sidebar">
             <h2>Sommaire</h2>
             <ul>
-                <li><a href="#cours1">Cours 1</a></li>
-                <li><a href="#cours2">Cours 2</a></li>
-                <li><a href="#cours3">Cours 3</a></li>
-                <li><a href="#cours4">Cours 4</a></li>
+                <!-- Les liens seront générés dynamiquement -->
             </ul>
         </aside>
 
         <!-- Zone Centrale -->
         <main class="main-content">
-            <h2>Ressources</h2>
-            <p>CHAPITRE 1 : INTRODUCTION
-                <ul>
-                    <li><a href="https://www.w3schools.com/python/python_intro.asp" target="_blank">W3Schools</a></li>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Python Official</a></li>
-                    <li><a href="https://www.geeksforgeeks.org/introduction-to-python/" target="_blank">Geeks for Geeks</a></li>
-                    <li><a href="https://developers.google.com/edu/python/introduction" target="_blank">Google for Developers</a></li>
-                </ul>
-            </p>
-            <p>CHAPITRE 2 : OPÉRATEUR LOGIQUES
-                <ul>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Additions</a></li>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Multiplications</a></li>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Opérations spéciales</a></li>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Priorité des opérations</a></li>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Bibliothèque Mathématiques</a></li>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Algorithmes Simples</a></li>
-                </ul>
-            </p>
-            <p>CHAPITRE 3 : VARIABLES
-                <ul>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Variables</a></li>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Typages</a></li>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Cast</a></li>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Propriétés des Types</a></li>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Opérations sur Variables</a></li>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Sous-typage</a></li>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Sur-typage</a></li>
-                </ul>
-            </p>
-            <p>CHAPITRE 4 : CHAINES DE CARACTERES
-                <ul>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Introduction aux String</a></li>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Utilisations</a></li>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Ecriture des variables</a></li>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Opérations sur les String</a></li>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Concaténation</a></li>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Input</a></li>
-                </ul>
-            </p>
-            <p>CHAPITRE 5 : LISTES ET TABLEAUX
-                <ul>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Introduction aux listes</a></li>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Introduction aux tableaux</a></li>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Différences entre listes et tableaux</a></li>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Opérations sur les listes</a></li>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Opérations sur les tableaux</a></li>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Index</a></li>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Arrangement</a></li>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Exploration</a></li>
-                    <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Tris</a></li>
-                </ul>
-            </p>
+            <!-- CHAPITRE 1 -->
+            <h4 id="chapitre1">CHAPITRE 1 : INTRODUCTION À PYTHON</h4>
+            <ul>
+                <li><a href="https://www.python.org/doc/" target="_blank">Documentation officielle</a></li>
+                <li><a href="https://www.w3schools.com/python/python_intro.asp" target="_blank">Introduction sur W3Schools</a></li>
+                <li><a href="https://realpython.com/python-basics/" target="_blank">Cours de base sur Real Python</a></li>
+            </ul>
+
+            <!-- CHAPITRE 2 -->
+            <h4 id="chapitre2">CHAPITRE 2 : LES VARIABLES ET TYPES DE DONNÉES</h4>
+            <ul>
+                <li><a href="https://realpython.com/python-data-types/" target="_blank">Types de données sur Real Python</a></li>
+                <li><a href="https://www.geeksforgeeks.org/python-variables/" target="_blank">Guide sur les variables</a></li>
+                <li><a href="https://www.w3schools.com/python/python_variables.asp" target="_blank">Variables sur W3Schools</a></li>
+            </ul>
+
+            <!-- CHAPITRE 3 -->
+            <h4 id="chapitre3">CHAPITRE 3 : LES OPÉRATEURS LOGIQUES ET ARITHMÉTIQUES</h4>
+            <ul>
+                <li><a href="https://realpython.com/python-operators/" target="_blank">Opérateurs sur Real Python</a></li>
+                <li><a href="https://www.w3schools.com/python/python_operators.asp" target="_blank">Opérateurs sur W3Schools</a></li>
+                <li><a href="https://data-flair.training/blogs/python-operators/" target="_blank">Guide complet sur les opérateurs</a></li>
+            </ul>
+
+            <!-- CHAPITRE 4 -->
+            <h4 id="chapitre4">CHAPITRE 4 : LES STRUCTURES DE CONTRÔLE</h4>
+            <ul>
+                <li><a href="https://realpython.com/python-conditional-statements/" target="_blank">Conditions sur Real Python</a></li>
+                <li><a href="https://www.w3schools.com/python/python_conditions.asp" target="_blank">Conditions sur W3Schools</a></li>
+                <li><a href="https://www.geeksforgeeks.org/python-control-flow/" target="_blank">Flux de contrôle sur GeeksforGeeks</a></li>
+            </ul>
+
+            <!-- CHAPITRE 5 -->
+            <h4 id="chapitre5">CHAPITRE 5 : LES FONCTIONS EN PYTHON</h4>
+            <ul>
+                <li><a href="https://realpython.com/defining-your-own-python-function/" target="_blank">Fonctions sur Real Python</a></li>
+                <li><a href="https://www.w3schools.com/python/python_functions.asp" target="_blank">Fonctions sur W3Schools</a></li>
+                <li><a href="https://www.tutorialspoint.com/python/python_functions.htm" target="_blank">Guide sur les fonctions</a></li>
+            </ul>
+            <!-- CHAPITRE 6 -->
+            <h4 id="chapitre6">CHAPITRE 6 : LES BOUCLES</h4>
+            <ul>
+                <li><a href="https://docs.python.org/3/tutorial/controlflow.html#for-statements" target="_blank">Documentation officielle Python - Les Boucles</a></li>
+                <li><a href="https://www.w3schools.com/python/python_for_loops.asp" target="_blank">W3Schools - Python Loops</a></li>
+                <li><a href="https://realpython.com/python-for-loop/" target="_blank">Real Python - For Loops</a></li>
+                <li><a href="https://www.youtube.com/watch?v=N_lk9MNKILo" target="_blank">Vidéo YouTube - Boucles en Python (Français)</a></li>
+                <li><a href="https://www.geeksforgeeks.org/python-while-loops/" target="_blank">GeeksforGeeks - Python While Loops</a></li>
+            </ul>
+
+            <!-- CHAPITRE 7 -->
+            <h4 id="chapitre7">CHAPITRE 7 : LES LISTES</h4>
+            <ul>
+                <li><a href="https://www.w3schools.com/python/python_lists.asp" target="_blank">W3Schools - Python Lists</a></li>
+                <li><a href="https://realpython.com/python-lists-tuples/" target="_blank">Real Python - Lists in Python</a></li>
+                <li><a href="https://www.geeksforgeeks.org/python-list/" target="_blank">GeeksforGeeks - Python List</a></li>
+                <li><a href="https://www.youtube.com/watch?v=ohCDWZgNIU0" target="_blank">Vidéo YouTube - Les listes en Python (Français)</a></li>
+                <li><a href="https://towardsdatascience.com/a-visual-guide-to-python-lists-315ae705b65d" target="_blank">Visual Guide to Python Lists</a></li>
+            </ul>
+
+            <!-- CHAPITRE 8 -->
+            <h4 id="chapitre8">CHAPITRE 8 : LES DICTIONNAIRES</h4>
+            <ul>
+                <li><a href="https://docs.python.org/3/tutorial/datastructures.html#dictionaries" target="_blank">Documentation officielle Python - Les Dictionnaires</a></li>
+                <li><a href="https://www.w3schools.com/python/python_dictionaries.asp" target="_blank">W3Schools - Python Dictionaries</a></li>
+                <li><a href="https://realpython.com/python-dicts/" target="_blank">Real Python - Python Dictionaries</a></li>
+                <li><a href="https://www.youtube.com/watch?v=ZEZdys-fHDw" target="_blank">Vidéo YouTube - Dictionnaires en Python (Français)</a></li>
+                <li><a href="https://www.geeksforgeeks.org/python-dictionary/" target="_blank">GeeksforGeeks - Python Dictionary</a></li>
+            </ul>
+
+            <!-- CHAPITRE 9 -->
+            <h4 id="chapitre9">CHAPITRE 9 : LES ENSEMBLES</h4>
+            <ul>
+                <li><a href="https://docs.python.org/3/tutorial/datastructures.html#sets" target="_blank">Documentation officielle Python - Les Ensembles</a></li>
+                <li><a href="https://www.w3schools.com/python/python_sets.asp" target="_blank">W3Schools - Python Sets</a></li>
+                <li><a href="https://realpython.com/python-sets/" target="_blank">Real Python - Python Sets</a></li>
+                <li><a href="https://www.youtube.com/watch?v=fUwY-GW3SE4" target="_blank">Vidéo YouTube - Les ensembles en Python</a></li>
+                <li><a href="https://www.geeksforgeeks.org/python-set/" target="_blank">GeeksforGeeks - Python Set</a></li>
+            </ul>
+
+            <!-- CHAPITRE 10 -->
+            <h4 id="chapitre10">CHAPITRE 10 : LES CLASSES ET OBJETS</h4>
+            <ul>
+                <li><a href="https://docs.python.org/3/tutorial/classes.html" target="_blank">Documentation officielle Python - Classes et Objets</a></li>
+                <li><a href="https://www.w3schools.com/python/python_classes.asp" target="_blank">W3Schools - Python Classes</a></li>
+                <li><a href="https://realpython.com/python3-object-oriented-programming/" target="_blank">Real Python - Object-Oriented Programming in Python</a></li>
+                <li><a href="https://www.youtube.com/watch?v=qiSCMNBIP2g" target="_blank">Vidéo YouTube - Classes en Python</a></li>
+                <li><a href="https://www.geeksforgeeks.org/python-classes-and-objects/" target="_blank">GeeksforGeeks - Classes and Objects</a></li>
+            </ul>
         </main>
 
         <!-- Zone Droite -->
@@ -109,65 +149,100 @@
             <p>Sélectionnez une ressource pour l'afficher ici.</p>
         </aside>
     </div>
+
     <script>
-        // Sélectionne tous les liens dans la zone centrale
+        // Sélectionne tous les titres de chapitre dans la zone centrale
+        const chapterTitles = document.querySelectorAll('.main-content h4');
+
+        // Sélectionne la liste dans la zone de gauche (sommaire)
+        const sidebarList = document.querySelector('.sidebar ul');
+
+        // Sélectionne la zone centrale
+        const mainContent = document.querySelector('.main-content');
+
+        // Parcourt tous les chapitres et génère des liens dans le sommaire
+        chapterTitles.forEach(chapter => {
+            const listItem = document.createElement('li');
+            const anchor = document.createElement('a');
+            anchor.href = `#${chapter.id}`; // Crée un lien ancré vers l'id du chapitre
+            anchor.textContent = chapter.textContent; // Utilise le texte du chapitre
+            anchor.style.textDecoration = 'none';
+            anchor.style.color = '#007bff';
+
+            // Ajoute un événement pour gérer le défilement
+            anchor.addEventListener('click', function (event) {
+                event.preventDefault(); // Empêche le comportement par défaut
+                const target = document.querySelector(`#${chapter.id}`); // Cible le chapitre
+                if (target) {
+                    mainContent.scrollTo({
+                        top: target.offsetTop - (mainContent.offsetTop + 20), // Calcule le décalage
+                        behavior: 'smooth' // Défilement fluide
+                    });
+                }
+            });
+
+            listItem.appendChild(anchor);
+            sidebarList.appendChild(listItem);
+        });
+    </script>
+    <script>
+        // Sélectionne tous les liens de la zone centrale
         const links = document.querySelectorAll('.main-content a');
     
-        // Sélectionne la zone de prévisualisation (droite)
-        const previewArea = document.querySelector('.preview');
+        // Sélectionne la liste de l'historique dans la zone de droite
+        const historyList = document.querySelector('.preview p');
     
-        // Tableau pour stocker l'historique des liens cliqués
+        // Tableau pour stocker l'historique
         const history = [];
     
         // Fonction pour mettre à jour l'historique
-        function updatePreview() {
-            // Vide la zone de prévisualisation
-            previewArea.innerHTML = '<h2>Historique des ressources ouvertes</h2>';
+        function updateHistory() {
+            // Efface le contenu précédent
+            historyList.innerHTML = '<h2></h2>';
             const list = document.createElement('ul');
             list.style.listStyle = 'none'; // Pas de puces
             list.style.padding = '0';
     
-            // Parcourt l'historique et ajoute les liens dans la liste
+            // Affiche les derniers liens cliqués
             history.forEach(link => {
                 const listItem = document.createElement('li');
                 const anchor = document.createElement('a');
                 anchor.href = link.href;
                 anchor.target = '_blank'; // Ouvre dans un nouvel onglet
                 anchor.textContent = link.text;
-                anchor.style.color = '#007bff'; // Style pour le lien
                 anchor.style.textDecoration = 'none';
-                anchor.style.fontWeight = 'bold';
+                anchor.style.color = '#007bff';
                 anchor.onmouseover = () => (anchor.style.textDecoration = 'underline');
                 anchor.onmouseout = () => (anchor.style.textDecoration = 'none');
                 listItem.appendChild(anchor);
                 list.appendChild(listItem);
             });
     
-            // Ajoute la liste à la zone de prévisualisation
-            previewArea.appendChild(list);
+            // Ajoute la liste à la zone de droite
+            historyList.appendChild(list);
         }
     
         // Ajoute un événement "click" à chaque lien
         links.forEach(link => {
-            link.addEventListener('click', function(event) {
+            link.addEventListener('click', function (event) {
                 const clickedText = this.textContent; // Récupère le texte du lien
                 const clickedHref = this.href; // Récupère le lien
     
                 // Ajoute le lien à l'historique
                 history.unshift({ text: clickedText, href: clickedHref });
     
-                // Limite la taille de l'historique à ce que la zone peut afficher
-                if (history.length > 15) {
-                    history.pop(); // Supprime l'élément le plus ancien
+                // Limite l'historique à 10 éléments
+                if (history.length > 10) {
+                    history.pop();
                 }
     
-                // Met à jour la zone de prévisualisation
-                updatePreview();
+                // Met à jour l'historique
+                updateHistory();
             });
         });
     
-        // Initialise la zone avec un message par défaut
-        updatePreview();
+        // Initialisation
+        updateHistory();
     </script>
 </body>
 </html>

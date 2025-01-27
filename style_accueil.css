@@ -10,16 +10,16 @@ html, body {
   
   /* Header : configuration de la barre */
   /* Header : configuration de la barre */
-    header {
-        background-color: #ffffff;
-        padding: 10px 20px; /* Ajoute un padding vertical pour aérer */
-        border-bottom: 1px solid #ccc;
-        display: flex;
-        justify-content: space-between; /* Sépare le logo et le menu */
-        align-items: center; /* Centre verticalement le contenu */
-        height: auto; /* Hauteur dynamique basée sur le contenu */
-        min-height: 70px; /* Assure une hauteur minimale pour éviter un écrasement */
-    }
+  header {
+    background-color: #ffffff;
+    padding: 10px 20px; /* Identique dans les deux fichiers */
+    display: flex;
+    justify-content: space-between; /* Sépare le logo et le menu */
+    align-items: center; /* Centre verticalement le contenu */
+    height: auto; /* Hauteur basée sur le contenu */
+    min-height: 70px; /* Assure une hauteur minimale */
+    border-bottom: 1px solid #ccc;
+}
   
   /* Style du logo */
   .logo-container img {
@@ -87,6 +87,7 @@ html, body {
 
 /* Style actif (au moment du clic) */
 .main-nav a:active {
-    color: #CC5500; /* Couleur légèrement plus sombre lors du clic */
+    color: #d95700; /* Couleur légèrement plus sombre lors du clic */
     text-decoration: none;
 }
+
