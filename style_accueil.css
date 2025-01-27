@@ -55,7 +55,7 @@ html, body {
   /* Triangle orange caché sous les liens */
   .main-nav li .triangle {
     position: absolute;
-    bottom: -15px; /* Place le triangle au-dessus du texte */
+    bottom: -17.5px; /* Place le triangle au-dessus du texte */
     left: 50%; /* Centre horizontalement */
     transform: translateX(-50%);
     width: 0;
