@@ -91,3 +91,23 @@ html, body {
     text-decoration: none;
 }
 
+/* Conteneur de la barre de progression (centrée) */
+.progress-container {
+  width: 50%; /* Définit la largeur de la barre, ajustable selon ton besoin */
+  background-color: #f3f3f3;
+  height: 10px; /* Épaisseur de la barre */
+  position: fixed;
+  top: 50%; /* Centre verticalement */
+  left: 50%; /* Centre horizontalement */
+  transform: translate(-50%, -50%); /* Décale pour centrer précisément */
+  z-index: 1000;
+  border-radius: 5px; /* Ajoute un effet arrondi (optionnel) */
+}
+
+/* Barre de progression statique (juste pour le visuel) */
+.progress-bar {
+  width: 35%; /* La barre sera remplie à 50% par défaut */
+  height: 100%;
+  background-color: #FF6600; /* Couleur de la barre */
+  border-radius: 0px; /* Pour un effet plus esthétique */
+}
