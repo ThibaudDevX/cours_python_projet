@@ -62,7 +62,7 @@ header {
 
 /* Triangle sous les liens */
 .main-nav li .triangle {
-  position: absolute;
+  position: absolute; /* Positionnement absolu */
   bottom: -17.5px;
   left: 50%;
   transform: translateX(-50%);
@@ -131,4 +131,13 @@ header {
 .main-nav a:active {
   color: #d95700;
   text-decoration: none;
+}
+
+/* TITRE ACCUEIL */
+.titre_accueil {
+  font-weight: bold;
+  color: #d95700;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 220px;
 }
