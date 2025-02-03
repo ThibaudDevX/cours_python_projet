@@ -1,4 +1,6 @@
-/* Global styles */
+/* ============================= */
+/*        🌍 STYLES GLOBAUX      */
+/* ============================= */
 html, body {
     margin: 0;
     padding: 0;
@@ -10,7 +12,9 @@ html, body {
     scroll-behavior: smooth; /* Active un défilement fluide */
 }
 
-/* Bandeau d'accueil */
+/* ============================= */
+/*      🏠 HEADER (Bandeau)      */
+/* ============================= */
 header {
     background-color: #ffffff;
     padding: 10px 20px;
@@ -21,16 +25,21 @@ header {
     border-bottom: 1px solid #ccc;
 }
 
+/* 📌 Logo */
 .logo-container img {
     max-height: 75px;
 }
 
+/* 📌 Centrage du menu */
 .nav-center {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
+/* ============================= */
+/*    🔗 BARRE DE NAVIGATION     */
+/* ============================= */
 .main-nav ul {
     display: flex;
     gap: 30px;
@@ -45,6 +54,7 @@ header {
     font-weight: bold;
 }
 
+/* 🎨 Style des liens */
 .main-nav a {
     text-decoration: none;
     color: #FF6600;
@@ -55,17 +65,18 @@ header {
     color: #FF4500;
 }
 
+/* 🔽 Triangle sous les liens */
 .main-nav li .triangle {
     position: absolute;
-    bottom: -17.5px;
-    left: 50%;
+    bottom: -17.5px; /* Place le triangle au-dessus du texte */
+    left: 50%; /* Centre horizontalement */
     transform: translateX(-50%);
     width: 0;
     height: 0;
-    border-left: 7.5px solid transparent;
+    border-left: 7.5px solid transparent; /* Bords latéraux transparents */
     border-right: 7.5px solid transparent;
-    border-bottom: 13px solid #FF6600;
-    opacity: 0;
+    border-bottom: 13px solid #FF6600; /* Triangle orange qui pointe vers le haut */
+    opacity: 0; /* Caché initialement */
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -73,14 +84,18 @@ header {
     opacity: 1;
 }
 
-/* Conteneur principal */
+/* ============================= */
+/*     📦 CONTENEUR GLOBAL       */
+/* ============================= */
 .container {
     display: flex;
     flex-direction: row;
     height: calc(100vh - 70px);
 }
 
-/* Zone gauche : Sommaire */
+/* ============================= */
+/*      📌 ZONE GAUCHE (Sommaire) */
+/* ============================= */
 .sidebar {
     width: 20%;
     background-color: #ffffff;
@@ -106,6 +121,7 @@ header {
     margin-bottom: 10px;
 }
 
+/* 🎨 Style des liens dans la zone gauche */
 .sidebar a {
     text-decoration: none;
     color: #FF6600;
@@ -118,7 +134,9 @@ header {
     text-decoration: underline; /* Facultatif */
 }
 
-/* Zone centrale */
+/* ============================= */
+/*     📄 ZONE CENTRALE (Contenu) */
+/* ============================= */
 .main-content {
     flex: 1;
     background-color: #ffffff;
@@ -145,6 +163,7 @@ header {
     position: relative;
 }
 
+/* 🎨 Style des liens dans la zone centrale */
 .main-content a {
     position: relative;
     text-decoration: none;
@@ -157,6 +176,7 @@ header {
     color: #d95700;
 }
 
+/* 🔼 Triangle à droite des liens */
 .main-content a::after {
     content: "";
     position: absolute;
@@ -178,7 +198,9 @@ header {
     transform: translateY(-50%) translateX(-2px);
 }
 
-/* Zone droite : Historique */
+/* ============================= */
+/*    📜 ZONE DROITE (Historique) */
+/* ============================= */
 .preview {
     width: 25%;
     background-color: #ffffff;
@@ -203,6 +225,7 @@ header {
     margin-bottom: 10px;
 }
 
+/* 🎨 Style des liens dans la zone de droite */
 .preview a {
     position: relative;
     text-decoration: none;
@@ -215,6 +238,7 @@ header {
     color: #d95700;
 }
 
+/* 🔼 Triangle à droite des liens */
 .preview a::after {
     content: "";
     position: absolute;

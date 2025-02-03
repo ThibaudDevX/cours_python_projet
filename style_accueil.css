@@ -1,113 +1,148 @@
-/* Supprime les marges et paddings globaux */
+/* ============================= */
+/*        🌍 STYLES GLOBAUX      */
+/* ============================= */
 html, body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    background-color: gainsboro; /* Arrière-plan global */
-  }
-  
-  /* Header : configuration de la barre */
-  /* Header : configuration de la barre */
-  header {
-    background-color: #ffffff;
-    padding: 10px 20px; /* Identique dans les deux fichiers */
-    display: flex;
-    justify-content: space-between; /* Sépare le logo et le menu */
-    align-items: center; /* Centre verticalement le contenu */
-    height: auto; /* Hauteur basée sur le contenu */
-    min-height: 70px; /* Assure une hauteur minimale */
-    border-bottom: 1px solid #ccc;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: gainsboro;
+  color: #333;
+  height: 100%; /* Assure que le contenu s'affiche correctement */
+  scroll-behavior: smooth; /* Défilement fluide */
 }
-  
-  /* Style du logo */
-  .logo-container img {
-    max-height: 75px; /* Ajuste la taille du logo */
-  }
-  
-  /* La div qui contient la navigation (pour centrer indépendamment du logo) */
-  .nav-center {
-    position: absolute; /* Position absolue par rapport à la page */
-    left: 50%; /* Point de départ à 50% de la largeur de la page */
-    transform: translateX(-50%); /* Centre horizontalement le contenu */
-  }
-  
-  /* Style de la liste des liens */
-  .main-nav ul {
-    display: flex; /* Place les items sur une ligne */
-    gap: 30px; /* Espacement entre les liens */
-    list-style: none; /* Supprime les puces */
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Style des liens */
-  .main-nav li {
-    position: relative; /* Nécessaire pour positionner le triangle */
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    color: #FF6600; /* Couleur orange */
-    cursor: pointer;
-  }
-  
-  /* Triangle orange caché sous les liens */
-  .main-nav li .triangle {
-    position: absolute;
-    bottom: -17.5px; /* Place le triangle au-dessus du texte */
-    left: 50%; /* Centre horizontalement */
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 7.5px solid transparent; /* Bords latéraux transparents */
-    border-right: 7.5px solid transparent;
-    border-bottom: 13px solid #FF6600; /* Triangle orange qui pointe vers le haut */
-    opacity: 0; /* Caché initialement */
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-  
-  /* Affiche le triangle au survol */
-  .main-nav li:hover .triangle {
-    opacity: 1;
-  }
 
-  /* Style des liens par défaut */
+/* ============================= */
+/*      🏠 HEADER (Bandeau)      */
+/* ============================= */
+header {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* 📌 Logo */
+.logo-container img {
+  max-height: 75px;
+}
+
+/* 📌 Centrage du menu */
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ============================= */
+/*    🔗 BARRE DE NAVIGATION     */
+/* ============================= */
+.main-nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* 🎨 Style des liens */
+.main-nav li {
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* 📌 Liens standards */
 .main-nav a {
-    text-decoration: none; /* Supprime le soulignement */
-    color: #FF6600; /* Couleur orange */
-    font-weight: bold;
+  text-decoration: none;
+  color: #FF6600;
+  font-weight: bold;
 }
 
-/* Style pour les liens visités */
-.main-nav a:visited {
-    color: #FF6600 !important;
-    text-decoration: none !important;
+/* 🎨 Couleur des liens au survol */
+.main-nav a:hover {
+  color: #FF4500;
 }
 
-/* Style actif (au moment du clic) */
-.main-nav a:active {
-    color: #d95700; /* Couleur légèrement plus sombre lors du clic */
-    text-decoration: none;
+/* 🔽 Triangle sous les liens */
+.main-nav li .triangle {
+  position: absolute;
+  bottom: -17.5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 7.5px solid transparent;
+  border-right: 7.5px solid transparent;
+  border-bottom: 13px solid #FF6600;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Conteneur de la barre de progression (centrée) */
+/* 🔥 Affichage du triangle au survol */
+.main-nav li:hover .triangle {
+  opacity: 1;
+}
+
+/* ============================= */
+/*    📊 BARRE DE PROGRESSION    */
+/* ============================= */
 .progress-container {
-  width: 50%; /* Définit la largeur de la barre, ajustable selon ton besoin */
+  width: 50%;
   background-color: #f3f3f3;
-  height: 10px; /* Épaisseur de la barre */
+  height: 8px; /* Épaisseur de la barre */
   position: fixed;
   top: 50%; /* Centre verticalement */
   left: 50%; /* Centre horizontalement */
-  transform: translate(-50%, -50%); /* Décale pour centrer précisément */
+  transform: translate(-50%, -50%);
   z-index: 1000;
-  border-radius: 5px; /* Ajoute un effet arrondi (optionnel) */
+  border-radius: 5px; /* Bordures arrondies */
 }
 
-/* Barre de progression statique (juste pour le visuel) */
+/* Barre de progression statique */
 .progress-bar {
-  width: 35%; /* La barre sera remplie à 50% par défaut */
+  width: 50%; /* Remplissage de la barre */
   height: 100%;
-  background-color: #FF6600; /* Couleur de la barre */
-  border-radius: 0px; /* Pour un effet plus esthétique */
+  background-color: #FF6600;
+  border-radius: 5px;
+}
+
+/* ============================= */
+/*     📦 CONTENEUR PRINCIPAL     */
+/* ============================= */
+.container {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 70px);
+}
+
+/* ============================= */
+/*     📜 ZONE DE CONTENU        */
+/* ============================= */
+.main-content {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.main-content h2 {
+  font-size: 20px;
+}
+
+/* ============================= */
+/*   🎨 COULEURS DES LIENS       */
+/* ============================= */
+.main-nav a:visited {
+  color: #FF6600 !important;
+  text-decoration: none !important;
+}
+
+.main-nav a:active {
+  color: #d95700;
+  text-decoration: none;
 }
