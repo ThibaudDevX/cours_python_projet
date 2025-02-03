@@ -1,6 +1,4 @@
-/* ============================= */
-/*        🌍 STYLES GLOBAUX      */
-/* ============================= */
+/* STYLES GLOBAUX */
 html, body {
     margin: 0;
     padding: 0;
@@ -9,9 +7,7 @@ html, body {
     color: #333;
 }
 
-/* ============================= */
-/*      🏠 HEADER (Bandeau)      */
-/* ============================= */
+/* HEADER (Bandeau) */
 header {
     background-color: #ffffff;
     padding: 10px 20px;
@@ -22,21 +18,19 @@ header {
     border-bottom: 1px solid #ccc;
 }
 
-/* 📌 Logo */
+/* Logo */
 .logo-container img {
     max-height: 75px; /* Ajuste la taille du logo */
 }
 
-/* 📌 Centrage du menu */
+/* Centrage du menu */
 .nav-center {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
-/* ============================= */
-/*    🔗 BARRE DE NAVIGATION     */
-/* ============================= */
+/* BARRE DE NAVIGATION */
 .main-nav ul {
     display: flex;
     gap: 30px;
@@ -45,7 +39,7 @@ header {
     padding: 0;
 }
 
-/* 🎨 Style des liens */
+/* Style des liens */
 .main-nav li {
     position: relative;
     font-size: 16px;
@@ -53,19 +47,19 @@ header {
     cursor: pointer;
 }
 
-/* 📌 Liens standards */
+/* Liens standards */
 .main-nav a {
     text-decoration: none;
     color: #FF6600;
     font-weight: bold;
 }
 
-/* 🎨 Couleur des liens au survol */
+/* Couleur des liens au survol */
 .main-nav a:hover {
     color: #FF4500;
 }
 
-/* 🔽 Triangle sous les liens */
+/* Triangle sous les liens */
 .main-nav li .triangle {
     position: absolute;
     bottom: -17.5px;
@@ -80,14 +74,12 @@ header {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* 🔥 Affichage du triangle au survol */
+/* Affichage du triangle au survol */
 .main-nav li:hover .triangle {
     opacity: 1;
 }
 
-/* ============================= */
-/* 🎨 COULEURS DES LIENS VISITÉS */
-/* ============================= */
+/* COULEURS DES LIENS VISITÉS */
 .main-nav a:visited {
     color: #FF6600 !important;
     text-decoration: none !important;

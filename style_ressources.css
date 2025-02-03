@@ -1,6 +1,4 @@
-/* ============================= */
-/*        🌍 STYLES GLOBAUX      */
-/* ============================= */
+/* STYLES GLOBAUX */
 html, body {
     margin: 0;
     padding: 0;
@@ -12,9 +10,7 @@ html, body {
     scroll-behavior: smooth; /* Active un défilement fluide */
 }
 
-/* ============================= */
-/*      🏠 HEADER (Bandeau)      */
-/* ============================= */
+/* HEADER (Bandeau) */
 header {
     background-color: #ffffff;
     padding: 10px 20px;
@@ -25,21 +21,19 @@ header {
     border-bottom: 1px solid #ccc;
 }
 
-/* 📌 Logo */
+/* Logo */
 .logo-container img {
     max-height: 75px;
 }
 
-/* 📌 Centrage du menu */
+/* Centrage du menu */
 .nav-center {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
-/* ============================= */
-/*    🔗 BARRE DE NAVIGATION     */
-/* ============================= */
+/* BARRE DE NAVIGATION */
 .main-nav ul {
     display: flex;
     gap: 30px;
@@ -54,7 +48,7 @@ header {
     font-weight: bold;
 }
 
-/* 🎨 Style des liens */
+/* Style des liens */
 .main-nav a {
     text-decoration: none;
     color: #FF6600;
@@ -65,7 +59,7 @@ header {
     color: #FF4500;
 }
 
-/* 🔽 Triangle sous les liens */
+/* Triangle sous les liens */
 .main-nav li .triangle {
     position: absolute;
     bottom: -17.5px; /* Place le triangle au-dessus du texte */
@@ -84,18 +78,14 @@ header {
     opacity: 1;
 }
 
-/* ============================= */
-/*     📦 CONTENEUR GLOBAL       */
-/* ============================= */
+/* CONTENEUR GLOBAL */
 .container {
     display: flex;
     flex-direction: row;
     height: calc(100vh - 70px);
 }
 
-/* ============================= */
-/*      📌 ZONE GAUCHE (Sommaire) */
-/* ============================= */
+/* ZONE GAUCHE (Sommaire) */
 .sidebar {
     width: 20%;
     background-color: #ffffff;
@@ -121,7 +111,7 @@ header {
     margin-bottom: 10px;
 }
 
-/* 🎨 Style des liens dans la zone gauche */
+/* Style des liens dans la zone gauche */
 .sidebar a {
     text-decoration: none;
     color: #FF6600;
@@ -134,9 +124,7 @@ header {
     text-decoration: underline; /* Facultatif */
 }
 
-/* ============================= */
-/*     📄 ZONE CENTRALE (Contenu) */
-/* ============================= */
+/* ZONE CENTRALE (Contenu) */
 .main-content {
     flex: 1;
     background-color: #ffffff;
@@ -163,7 +151,7 @@ header {
     position: relative;
 }
 
-/* 🎨 Style des liens dans la zone centrale */
+/* Style des liens dans la zone centrale */
 .main-content a {
     position: relative;
     text-decoration: none;
@@ -176,7 +164,7 @@ header {
     color: #d95700;
 }
 
-/* 🔼 Triangle à droite des liens */
+/* Triangle à droite des liens */
 .main-content a::after {
     content: "";
     position: absolute;
@@ -198,9 +186,7 @@ header {
     transform: translateY(-50%) translateX(-2px);
 }
 
-/* ============================= */
-/*    📜 ZONE DROITE (Historique) */
-/* ============================= */
+/* ZONE DROITE (Historique) */
 .preview {
     width: 25%;
     background-color: #ffffff;
@@ -225,7 +211,7 @@ header {
     margin-bottom: 10px;
 }
 
-/* 🎨 Style des liens dans la zone de droite */
+/* Style des liens dans la zone de droite */
 .preview a {
     position: relative;
     text-decoration: none;
@@ -238,7 +224,7 @@ header {
     color: #d95700;
 }
 
-/* 🔼 Triangle à droite des liens */
+/* Triangle à droite des liens */
 .preview a::after {
     content: "";
     position: absolute;
@@ -258,4 +244,13 @@ header {
 .preview a:hover::after {
     opacity: 1;
     transform: translateY(-50%) translateX(-2px);
+}
+
+/* Ligne séparatrice des langues */
+
+hr {
+    border: none;
+    height: 2px; /* Épaisseur de la ligne */
+    background-color: #d95700; /* Couleur orange */
+    margin: 10px 0; /* Marge autour de la ligne */
 }
