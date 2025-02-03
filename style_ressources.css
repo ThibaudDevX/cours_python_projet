@@ -61,8 +61,8 @@ header {
 
 /* Triangle sous les liens */
 .main-nav li .triangle {
-    position: absolute;
-    bottom: -17.5px; /* Place le triangle au-dessus du texte */
+    position: absolute; /* Position absolue par rapport au lien */
+    bottom: -17.5px; /* Place le triangle en dessous du texte */
     left: 50%; /* Centre horizontalement */
     transform: translateX(-50%);
     width: 0;
@@ -113,15 +113,16 @@ header {
 
 /* Style des liens dans la zone gauche */
 .sidebar a {
-    text-decoration: none;
-    color: #FF6600;
+    font-size: 14px;
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: #0077ff !important;
     font-weight: bold;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; /* Transition fluide de la couleur */
 }
 
 .sidebar a:hover {
-    color: #d95700;
-    text-decoration: underline; /* Facultatif */
+    color: #00489a !important;
+    text-decoration: none; /* Supprime le soulignement au survol */
 }
 
 /* ZONE CENTRALE (Contenu) */
@@ -215,39 +216,17 @@ header {
 .preview a {
     position: relative;
     text-decoration: none;
-    color: #FF6600;
+    color: #0077ff !important;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .preview a:hover {
-    color: #d95700;
-}
-
-/* Triangle à droite des liens */
-.preview a::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    margin-left: 10px;
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
-    border-right: 12px solid #FF6600;
-    opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.preview a:hover::after {
-    opacity: 1;
-    transform: translateY(-50%) translateX(-2px);
+    color: #00489a !important;
+    text-decoration: none !important;
 }
 
 /* Ligne séparatrice des langues */
-
 hr {
     border: none;
     height: 2px; /* Épaisseur de la ligne */
