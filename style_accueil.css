@@ -82,7 +82,7 @@ header {
 
 /* BARRE DE PROGRESSION */
 .progress-container {
-  width: 50%; /* Remplissage de la barre */
+  width: 50%; /* Largeur de la barre dans la page */
   background-color: #f3f3f3;
   height: 8px; /* Épaisseur de la barre */
   position: fixed;
@@ -95,10 +95,10 @@ header {
 
 /* Barre de progression statique */
 .progress-bar {
-  width: 50%; /* Remplissage de la barre */
-  height: 100%;
+  width: 61.8%; /* Remplissage de la barre */
+  height: 100%; 
   background-color: #FF6600;
-  border-radius: 5px;
+  border-radius: 5px; /* Bordures arrondies */
 }
 
 /* CONTENEUR PRINCIPAL */
