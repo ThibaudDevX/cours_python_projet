@@ -55,10 +55,6 @@ header {
     transition: color 0.3s ease;
 }
 
-.main-nav a:hover {
-    color: #FF4500;
-}
-
 /* Triangle sous les liens */
 .main-nav li .triangle {
     position: absolute; /* Position absolue par rapport au lien */
@@ -162,7 +158,7 @@ header {
 }
 
 .main-content a:hover {
-    color: #d95700;
+    color: #a54200;
 }
 
 /* Triangle à droite des liens */
@@ -230,6 +226,6 @@ header {
 hr {
     border: none;
     height: 2px; /* Épaisseur de la ligne */
-    background-color: #d95700; /* Couleur orange */
+    background-color: #a54200; /* Couleur orange */
     margin: 10px 0; /* Marge autour de la ligne */
 }

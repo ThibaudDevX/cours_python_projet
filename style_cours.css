@@ -56,7 +56,7 @@ header {
 
 /* Couleur des liens au survol */
 .main-nav a:hover {
-    color: #FF4500;
+    color: #a54200;
 }
 
 /* Triangle sous les liens */
@@ -85,8 +85,39 @@ header {
     text-decoration: none !important;
 }
 
-/* 🎨 Couleur des liens actifs (clic) */
-.main-nav a:active {
-    color: #d95700;
-    text-decoration: none;
+/* 📌 Zone centrale pour écrire du contenu */
+.content-area {
+    width: 80%; /* Ajuste la largeur à 80% de la page */
+    max-width: 900px; /* Empêche la zone de devenir trop large */
+    background-color: #ffffff; /* Fond blanc pour le contraste */
+    padding: 20px; /* Espacement interne */
+    margin: 30px auto; /* Centre la zone */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet propre */
+}
+
+/* 📌 Style du texte */
+.content-area h2 {
+    text-align: center;
+    color: #FF6600; /* Couleur orange */
+}
+
+.content-area p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.liens_cours a {
+    display: flex; /* Affiche les liens en ligne */
+    justify-content: center; /* Centre horizontalement */
+    gap: 20px; /* Espacement entre les liens */
+    margin-top: 20px; /* Espacement du haut */
+    color: #FF6600 !important; /* Couleur orange */
+    text-decoration: none !important; /* Supprime le soulignement */
+}
+
+.liens_cours a:hover {
+    text-decoration: none; /* Supprime le soulignement au survol */
+    color: #a54200 !important; /* Couleur orange plus foncée au survol */
 }

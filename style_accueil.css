@@ -57,7 +57,7 @@ header {
 
 /* Couleur des liens au survol */
 .main-nav a:hover {
-  color: #FF4500;
+  color: #a54200;
 }
 
 /* Triangle sous les liens */
@@ -84,7 +84,7 @@ header {
 .progress-container {
   width: 50%; /* Largeur de la barre dans la page */
   background-color: #f3f3f3;
-  height: 8px; /* Épaisseur de la barre */
+  height: 10px; /* Épaisseur de la barre */
   position: fixed;
   top: 50%; /* Centre verticalement */
   left: 50%; /* Centre horizontalement */
@@ -129,15 +129,15 @@ header {
 }
 
 .main-nav a:active {
-  color: #d95700;
+  color: #a54200;
   text-decoration: none;
 }
 
 /* TITRE ACCUEIL */
 .titre_accueil {
   font-weight: bold;
-  color: #d95700;
+  color: #FF6600;
   text-align: center;
   font-size: 50px;
-  margin-top: 220px;
+  margin-top: 275px;
 }
