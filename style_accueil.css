@@ -3,7 +3,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: gainsboro;
+  background-color: #FF6600;
   color: #333;
   height: 100%; /* Assure que le contenu s'affiche correctement */
   scroll-behavior: smooth; /* Défilement fluide */
@@ -83,7 +83,7 @@ header {
 /* BARRE DE PROGRESSION */
 .progress-container {
   width: 50%; /* Largeur de la barre dans la page */
-  background-color: #f3f3f3;
+  background-color: #a54200;
   height: 10px; /* Épaisseur de la barre */
   position: fixed;
   top: 50%; /* Centre verticalement */
@@ -97,7 +97,7 @@ header {
 .progress-bar {
   width: 61.8%; /* Remplissage de la barre */
   height: 100%; 
-  background-color: #FF6600;
+  background-color: white;
   border-radius: 5px; /* Bordures arrondies */
 }
 
@@ -136,8 +136,8 @@ header {
 /* TITRE ACCUEIL */
 .titre_accueil {
   font-weight: bold;
-  color: #FF6600;
+  color: white;
   text-align: center;
   font-size: 50px;
-  margin-top: 225px;
+  margin-top: 215px;
 }
