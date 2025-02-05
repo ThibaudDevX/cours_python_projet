@@ -141,3 +141,28 @@ header {
   font-size: 50px;
   margin-top: 215px;
 }
+
+/* Conteneur du bouton */
+.btn-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Bouton stylisé */
+.cta-button {
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: #a54200;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+  background-color: #CC5500;
+  transform: scale(1.05);
+}
