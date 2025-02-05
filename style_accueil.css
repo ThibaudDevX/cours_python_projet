@@ -159,10 +159,10 @@ header {
   text-decoration: none;
   border-radius: 8px;
   transition: 0.3s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 8px rgba(0.1, 0.1, 0.1, 0.2);
 }
 
 .cta-button:hover {
-  background-color: #CC5500;
+  background-color: #bd4c00;
   transform: scale(1.05);
 }
