@@ -112,7 +112,7 @@ header {
 /* Conteneur des liens */
 .liens_cours {
     text-align: center; /* ✅ Centre les liens horizontalement */
-    margin: 10px 0; /* ✅ Espacement entre chaque lien */
+    margin: 0px 0; /* ✅ Espacement entre chaque lien */
 }
 
 /* Style des liens */
