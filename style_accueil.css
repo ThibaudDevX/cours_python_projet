@@ -166,3 +166,22 @@ header {
   background-color: #bd4c00;
   transform: scale(1.05);
 }
+
+/* Conteneur du streak */
+#streak-container {
+  text-align: center;  /* ✅ Centre le texte */
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FF6600;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 8px;
+  display: flex;  /* ✅ Utilise flexbox pour centrer */
+  justify-content: center; /* ✅ Centre horizontalement */
+  align-items: center; /* ✅ Centre verticalement */
+  width: fit-content; /* ✅ Ajuste la largeur au contenu */
+  margin-left: auto; /* ✅ Centre le div sur la page */
+  margin-right: auto; /* ✅ Centre le div sur la page */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
