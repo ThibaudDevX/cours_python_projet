@@ -1,14 +1,15 @@
 /* STYLES GLOBAUX */
 html, body {
+/* Assure que le body et le html prennent exactement 100% de la hauteur */
+html, body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
   background-color: #FF6600;
   color: #333;
-  height: 100%; /* Assure que le contenu s'affiche correctement */
-  scroll-behavior: smooth; /* Défilement fluide */
+  height: 100vh; /* Change min-height en height pour éviter le scroll */
+  overflow: hidden; /* Supprime tout scroll inutile */
 }
-
 /* HEADER (Bandeau) */
 header {
   background-color: #ffffff;
@@ -62,7 +63,7 @@ header {
 
 /* Triangle sous les liens */
 .main-nav li .triangle {
-  position: absolute; /* Positionnement absolu */
+  position: absolute;
   bottom: -17.5px;
   left: 50%;
   transform: translateX(-50%);
@@ -80,75 +81,43 @@ header {
   opacity: 1;
 }
 
-/* BARRE DE PROGRESSION */
-.progress-container {
-  width: 50%; /* Largeur de la barre dans la page */
-  background-color: #a54200;
-  height: 10px; /* Épaisseur de la barre */
-  position: fixed;
-  top: 50%; /* Centre verticalement */
-  left: 50%; /* Centre horizontalement */
-  transform: translate(-50%, -50%);
-  z-index: 1000;
-  border-radius: 5px; /* Bordures arrondies */
+/* CONTENEUR PRINCIPAL POUR CENTRER LES ÉLÉMENTS */
+.main-container {
+  display: flex; /* Utilise flexbox pour centrer les éléments */
+  flex-direction: column; /* Aligne les éléments verticalement */
+  align-items: center; /* Centre les éléments horizontalement */
+  justify-content: center; /* Centre les éléments verticalement */
+  height: 90vh; /* Prend 90% de la hauteur de la fenêtre */
+  text-align: center; /* Centre le texte horizontalement */
+  gap: 30px; /* Ajoute un espace entre les éléments */
+  padding: 20px; /* Ajoute un peu d'espace autour des éléments */
+  box-sizing: border-box; /* Évite les débordements */
 }
 
-/* Barre de progression statique */
-.progress-bar {
-  width: 61.8%; /* Remplissage de la barre */
-  height: 100%; 
-  background-color: white;
-  border-radius: 5px; /* Bordures arrondies */
-}
-
-/* CONTENEUR PRINCIPAL */
-.container {
-  display: flex;
-  flex-direction: row;
-  height: calc(100vh - 70px);
-}
-
-/* ZONE DE CONTENU */
-.main-content {
-  flex: 1;
-  background-color: #ffffff;
-  padding: 20px;
-  margin: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  overflow-y: auto;
-}
-
-.main-content h2 {
-  font-size: 20px;
-}
-
-/* COULEURS DES LIENS */
-.main-nav a:visited {
-  color: #FF6600 !important;
-  text-decoration: none !important;
-}
-
-.main-nav a:active {
-  color: #a54200;
-  text-decoration: none;
-}
-
-/* TITRE ACCUEIL */
+/* TITRE */
 .titre_accueil {
   font-weight: bold;
   color: white;
-  text-align: center;
   font-size: 50px;
-  margin-top: 215px;
+  margin: 0;
 }
 
-/* Conteneur du bouton */
-.btn-container {
-  text-align: center;
-  margin-top: 20px;
+/* BARRE DE PROGRESSION */
+.progress-container {
+  width: 50%;
+  height: 10px;
+  background-color: #a54200;
+  border-radius: 5px;
 }
 
-/* Bouton stylisé */
+.progress-bar {
+  width: 61.8%;
+  height: 100%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* BOUTON */
 .cta-button {
   display: inline-block;
   padding: 15px 25px;
@@ -167,21 +136,13 @@ header {
   transform: scale(1.05);
 }
 
-/* Conteneur du streak */
+/* CONTENEUR DU STREAK */
 #streak-container {
-  text-align: center;  /* ✅ Centre le texte */
   font-size: 1.5rem;
   font-weight: bold;
   color: #FF6600;
-  margin-top: 15px;
   padding: 10px 20px;
   background: white;
   border-radius: 8px;
-  display: flex;  /* ✅ Utilise flexbox pour centrer */
-  justify-content: center; /* ✅ Centre horizontalement */
-  align-items: center; /* ✅ Centre verticalement */
-  width: fit-content; /* ✅ Ajuste la largeur au contenu */
-  margin-left: auto; /* ✅ Centre le div sur la page */
-  margin-right: auto; /* ✅ Centre le div sur la page */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
