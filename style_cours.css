@@ -149,3 +149,65 @@ header {
     opacity: 1;
     transform: translateY(-50%) translateX(2px); /* ✅ Animation douce */
 }
+
+/* 📌 Conteneur principal des cours */
+.cours-container {
+    position: relative;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+/* 📌 Changer le fond au survol */
+.cours-container:hover {
+    background: #f5f5f5;
+}
+
+/* 📌 Titre des cours */
+.cours-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FF6600;
+    padding: 10px;
+}
+
+/* 📌 Menu déroulant des ressources */
+.dropdown-content {
+    display: none; /* Caché par défaut */
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+}
+
+/* 📌 Afficher le menu déroulant au survol */
+.cours-container:hover .dropdown-content {
+    display: block;
+}
+
+/* 📌 Titres des ressources */
+.dropdown-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 5px;
+}
+
+/* 📌 Liens des ressources */
+.dropdown-content a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.dropdown-content a:hover {
+    color: #FF6600;
+    text-decoration: underline;
+}

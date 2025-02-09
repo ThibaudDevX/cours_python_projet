@@ -55,11 +55,6 @@ header {
   font-weight: bold;
 }
 
-/* Couleur des liens au survol */
-.main-nav a:hover {
-  color: #a54200;
-}
-
 /* Triangle sous les liens */
 .main-nav li .triangle {
   position: absolute;

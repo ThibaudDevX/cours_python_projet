@@ -1,0 +1,19 @@
+{
+    "Introduction à Python": {
+        "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/Introduction_a_Python.ipynb",
+        "ressources": [
+            { "text": "C'est quoi Python ? (FR)", "url": "https://fr.wikipedia.org/wiki/Python_(langage)" },
+            { "text": "Pourquoi apprendre Python ?", "url": "https://www.lebigdata.fr/pourquoi-apprendre-python" },
+            { "text": "Les avantages et inconvénients", "url": "https://www.youtube.com/watch?v=pgRsKEUcikc" },
+            { "text": "Téléchargement Python", "url": "https://www.python.org/downloads/" }
+        ]
+    },
+    "Les chaînes de caractères": {
+        "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/les_chaines_de_caracteres.ipynb",
+        "ressources": [
+            { "text": "Introduction aux Strings", "url": "https://realpython.com/python-strings/" },
+            { "text": "Les bases des chaînes", "url": "https://www.w3schools.com/python/python_strings.asp" },
+            { "text": "Les méthodes des chaînes", "url": "https://www.w3schools.com/python/python_ref_string.asp" }
+        ]
+    }
+}
