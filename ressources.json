@@ -1,6 +1,6 @@
 {
     "Introduction à Python": {
-        "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/Introduction_a_Python.ipynb",
+        "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/1_introduction.ipynb",
         "ressources": [
             { "text": "C'est quoi Python ? (FR)", "url": "https://fr.wikipedia.org/wiki/Python_(langage)" },
             { "text": "Pourquoi apprendre Python ?", "url": "https://www.lebigdata.fr/pourquoi-apprendre-python" },
@@ -9,7 +9,7 @@
         ]
     },
     "Variables et types": {
-        "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/variables_et_types.ipynb",
+        "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/2_variables_types_interaction.ipynb",
         "ressources": [
             { "text": "Les variables W3", "url": "https://www.w3schools.com/python/python_variables.asp" },
             { "text": "Les types W3", "url": "https://www.w3schools.com/python/python_datatypes.asp" }
