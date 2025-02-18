@@ -1,170 +1,180 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Ressources</title>
-    <link rel="stylesheet" href="style_ressources.css">
-</head>
-<body>
-
-<header>
-    <div class="logo-container">
-        <a href="/page_accueil.html">
-            <img src="/assets/logoUGA.png" alt="Logo UGA">
+    <link rel="stylesheet" href="style_ressources.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <a href="https://www.univ-grenoble-alpes.fr/">
+          <img src="/assets/logoUGA.png" alt="Logo UGA" />
         </a>
-    </div>
-    <div class="nav-center">
+      </div>
+      <div class="nav-center">
         <nav class="main-nav">
-            <ul>
-                <li>
-                    <a href="https://www.univ-grenoble-alpes.fr/" target="_blank">UNIVERSITÉ</a>
-                    <span class="triangle"></span>
-                </li>
-                <li>
-                    <a href="/page_cours.html">COURS</a>
-                    <span class="triangle"></span>
-                </li>
-                <li>
-                    <a href="/page_ressources.html">RESSOURCES</a>
-                    <span class="triangle"></span>
-                </li>
-            </ul>
+          <ul>
+            <li>
+              <a href="/page_accueil.html">PAGE D'ACCUEIL</a>
+              <span class="triangle"></span>
+            </li>
+            <li>
+              <a href="/page_cours.html">COURS</a>
+              <span class="triangle"></span>
+            </li>
+            <li>
+              <a href="/page_ressources.html">RESSOURCES</a>
+              <span class="triangle"></span>
+            </li>
+          </ul>
         </nav>
-    </div>
-</header>
+      </div>
+    </header>
 
-<!-- 📌 Conteneur principal -->
-<div class="container">
-    
-    <!-- 📌 Zone Sommaire -->
-    <aside class="sidebar">
+    <!-- 📌 Conteneur principal -->
+    <div class="container">
+      <!-- 📌 Zone Sommaire -->
+      <aside class="sidebar">
         <h2>Sommaire</h2>
         <ul id="sommaire"></ul>
-    </aside>
+      </aside>
 
-    <!-- 📌 Zone Centrale -->
-    <main class="main-content">
+      <!-- 📌 Zone Centrale -->
+      <main class="main-content">
         <h2>Ressources</h2>
-        <div id="ressources-container"></div> <!-- 📌 Les ressources seront générées ici -->
-    </main>
+        <div id="ressources-container"></div>
+        <!-- 📌 Les ressources seront générées ici -->
+      </main>
 
-    <!-- 📌 Zone Historique -->
-    <aside class="preview">
+      <!-- 📌 Zone Historique -->
+      <aside class="preview">
         <h2>Dernière ressource ouverte</h2>
         <ul id="historique"></ul>
-    </aside>
-</div>
+      </aside>
+    </div>
 
-<!-- 📌 Script pour charger dynamiquement le sommaire et les ressources -->
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const ressourcesContainer = document.getElementById("ressources-container");
-    const sommaireContainer = document.getElementById("sommaire");
-    const historiqueContainer = document.getElementById("historique");
-    const mainContent = document.querySelector(".main-content"); // Zone centrale
+    <!-- 📌 Script pour charger dynamiquement le sommaire et les ressources -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const ressourcesContainer = document.getElementById(
+          "ressources-container"
+        );
+        const sommaireContainer = document.getElementById("sommaire");
+        const historiqueContainer = document.getElementById("historique");
+        const mainContent = document.querySelector(".main-content"); // Zone centrale
 
-    // Charger les ressources depuis le fichier JSON
-    fetch("ressources.json")
-        .then(response => response.json())
-        .then(data => {
-            Object.keys(data).forEach(coursName => {
-                const coursData = data[coursName];
+        // Charger les ressources depuis le fichier JSON
+        fetch("ressources.json")
+          .then((response) => response.json())
+          .then((data) => {
+            Object.keys(data).forEach((coursName) => {
+              const coursData = data[coursName];
 
-                // 📌 Création du titre du chapitre dans la zone centrale
-                const chapterTitle = document.createElement("h4");
-                chapterTitle.textContent = coursName;
-                chapterTitle.id = coursName.replace(/\s+/g, '-').toLowerCase();
-                ressourcesContainer.appendChild(chapterTitle);
+              // 📌 Création du titre du chapitre dans la zone centrale
+              const chapterTitle = document.createElement("h4");
+              chapterTitle.textContent = coursName;
+              chapterTitle.id = coursName.replace(/\s+/g, "-").toLowerCase();
+              ressourcesContainer.appendChild(chapterTitle);
 
-                // 📌 Création de la liste des ressources
-                const ressourceList = document.createElement("ul");
+              // 📌 Création de la liste des ressources
+              const ressourceList = document.createElement("ul");
 
-                coursData.ressources.forEach(ressource => {
-                    const listItem = document.createElement("li");
-                    const ressourceLink = document.createElement("a");
-                    ressourceLink.href = ressource.url;
-                    ressourceLink.textContent = ressource.text;
-                    ressourceLink.target = "_blank";
+              coursData.ressources.forEach((ressource) => {
+                const listItem = document.createElement("li");
+                const ressourceLink = document.createElement("a");
+                ressourceLink.href = ressource.url;
+                ressourceLink.textContent = ressource.text;
+                ressourceLink.target = "_blank";
 
-                    // 📌 Sauvegarde dans l'historique au clic
-                    ressourceLink.addEventListener("click", function () {
-                        saveToHistorique(coursName, ressource.text, ressource.url);
-                    });
-
-                    listItem.appendChild(ressourceLink);
-                    ressourceList.appendChild(listItem);
+                // 📌 Sauvegarde dans l'historique au clic
+                ressourceLink.addEventListener("click", function () {
+                  saveToHistorique(coursName, ressource.text, ressource.url);
                 });
 
-                ressourcesContainer.appendChild(ressourceList);
+                listItem.appendChild(ressourceLink);
+                ressourceList.appendChild(listItem);
+              });
 
-                // 📌 Ajouter au sommaire
-                const sommaireItem = document.createElement("li");
-                const sommaireLink = document.createElement("a");
-                sommaireLink.href = `#${chapterTitle.id}`;
-                sommaireLink.textContent = coursName;
+              ressourcesContainer.appendChild(ressourceList);
 
-                // 📌 Ajout du scroll limité à `.main-content`
-                sommaireLink.addEventListener("click", function (event) {
-                    event.preventDefault();
-                    const target = document.getElementById(chapterTitle.id);
-                    mainContent.scrollTo({
-                        top: target.offsetTop - mainContent.offsetTop,
-                        behavior: "smooth"
-                    });
+              // 📌 Ajouter au sommaire
+              const sommaireItem = document.createElement("li");
+              const sommaireLink = document.createElement("a");
+              sommaireLink.href = `#${chapterTitle.id}`;
+              sommaireLink.textContent = coursName;
+
+              // 📌 Ajout du scroll limité à `.main-content`
+              sommaireLink.addEventListener("click", function (event) {
+                event.preventDefault();
+                const target = document.getElementById(chapterTitle.id);
+                mainContent.scrollTo({
+                  top: target.offsetTop - mainContent.offsetTop,
+                  behavior: "smooth",
                 });
+              });
 
-                sommaireItem.appendChild(sommaireLink);
-                sommaireContainer.appendChild(sommaireItem);
+              sommaireItem.appendChild(sommaireLink);
+              sommaireContainer.appendChild(sommaireItem);
             });
 
             // 📌 Charger l'historique sauvegardé
             loadHistorique();
-        })
-        .catch(error => console.error("❌ Erreur lors du chargement des ressources :", error));
-});
+          })
+          .catch((error) =>
+            console.error(
+              "❌ Erreur lors du chargement des ressources :",
+              error
+            )
+          );
+      });
 
-// 📌 Fonction pour sauvegarder une ressource dans l'historique
-function saveToHistorique(coursName, ressourceText, ressourceURL) {
-    let historique = JSON.parse(localStorage.getItem("historique")) || [];
+      // 📌 Fonction pour sauvegarder une ressource dans l'historique
+      function saveToHistorique(coursName, ressourceText, ressourceURL) {
+        let historique = JSON.parse(localStorage.getItem("historique")) || [];
 
-    // Ajout en début de liste
-    historique.unshift({ cours: coursName, text: ressourceText, url: ressourceURL });
+        // Ajout en début de liste
+        historique.unshift({
+          cours: coursName,
+          text: ressourceText,
+          url: ressourceURL,
+        });
 
-    // Limiter à 10 éléments max
-    if (historique.length > 10) {
-        historique.pop();
-    }
+        // Limiter à 10 éléments max
+        if (historique.length > 10) {
+          historique.pop();
+        }
 
-    localStorage.setItem("historique", JSON.stringify(historique));
+        localStorage.setItem("historique", JSON.stringify(historique));
 
-    // Mise à jour de l'affichage
-    loadHistorique();
-}
+        // Mise à jour de l'affichage
+        loadHistorique();
+      }
 
-// 📌 Fonction pour charger l'historique depuis `localStorage`
-function loadHistorique() {
-    const historiqueContainer = document.getElementById("historique");
-    historiqueContainer.innerHTML = "";
+      // 📌 Fonction pour charger l'historique depuis `localStorage`
+      function loadHistorique() {
+        const historiqueContainer = document.getElementById("historique");
+        historiqueContainer.innerHTML = "";
 
-    let historique = JSON.parse(localStorage.getItem("historique")) || [];
+        let historique = JSON.parse(localStorage.getItem("historique")) || [];
 
-    if (historique.length === 0) {
-        historiqueContainer.innerHTML = "<p>Aucune ressource consultée récemment.</p>";
-        return;
-    }
+        if (historique.length === 0) {
+          historiqueContainer.innerHTML =
+            "<p>Aucune ressource consultée récemment.</p>";
+          return;
+        }
 
-    historique.forEach(entry => {
-        const listItem = document.createElement("li");
-        const link = document.createElement("a");
-        link.href = entry.url;
-        link.textContent = `${entry.cours} - ${entry.text}`;
-        link.target = "_blank";
+        historique.forEach((entry) => {
+          const listItem = document.createElement("li");
+          const link = document.createElement("a");
+          link.href = entry.url;
+          link.textContent = `${entry.cours} - ${entry.text}`;
+          link.target = "_blank";
 
-        listItem.appendChild(link);
-        historiqueContainer.appendChild(listItem);
-    });
-}
+          listItem.appendChild(link);
+          historiqueContainer.appendChild(listItem);
+        });
+      }
     </script>
-
-</body>
+  </body>
 </html>
