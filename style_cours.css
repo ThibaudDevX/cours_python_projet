@@ -79,6 +79,30 @@ header {
     opacity: 1;
 }
 
+/* TODO: Style pour le menu déroulant */
+/* .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.main-nav li:hover .dropdown {
+    display: block;
+}
+.dropdown li {
+    width: 200px;
+}
+  
+.dropdown a {
+    padding: 10px;
+} */
+
 /* COULEURS DES LIENS VISITÉS */
 .main-nav a:visited {
     color: #FF6600 !important;
