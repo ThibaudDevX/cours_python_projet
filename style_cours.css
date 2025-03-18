@@ -235,3 +235,24 @@ header {
     color: #FF6600;
     text-decoration: underline;
 }
+
+/* 📌 Permet d'afficher le menu déroulant en évitant les fermetures brutales */
+.cours-container {
+    position: relative; /* ✅ Nécessaire pour la gestion du dropdown */
+}
+
+.cours-container:hover .dropdown-content,
+.cours-container:hover::after {
+    display: block;
+}
+
+/* 📌 Ajoute une zone invisible sous le dropdown pour éviter la fermeture immédiate */
+.cours-container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 15px; /* ✅ Crée un espace tampon sous le menu */
+    bottom: -15px; /* ✅ Empêche la fermeture brutale */
+    left: 0;
+    background: transparent;
+}

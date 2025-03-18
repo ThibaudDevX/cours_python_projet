@@ -46,5 +46,21 @@
             { "text": "La portée des variables PG", "url": "https://www.pierre-giraud.com/python-apprendre-programmer-cours/portee-variable/" },
             { "text": "La portée des variables DC", "url": "https://www.datacamp.com/fr/tutorial/scope-of-variables-python" }
         ]
+    },
+    "Suite intro L2": {
+        "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/cours_3_L2.ipynb",
+        "ressources": [
+            { "text": "Les objets W3", "url": "https://www.w3schools.com/python/python_classes.asp" },
+            { "text": "La portée des variables PG", "url": "https://www.pierre-giraud.com/python-apprendre-programmer-cours/portee-variable/" },
+            { "text": "La portée des variables DC", "url": "https://www.datacamp.com/fr/tutorial/scope-of-variables-python" }
+        ]
+    },
+    "Suite suite intro L2": {
+        "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/cours_4_L2.ipynb",
+        "ressources": [
+            { "text": "Les objets W3", "url": "https://www.w3schools.com/python/python_classes.asp" },
+            { "text": "La portée des variables PG", "url": "https://www.pierre-giraud.com/python-apprendre-programmer-cours/portee-variable/" },
+            { "text": "La portée des variables DC", "url": "https://www.datacamp.com/fr/tutorial/scope-of-variables-python" }
+        ]
     }
 }
