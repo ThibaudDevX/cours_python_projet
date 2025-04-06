@@ -38,10 +38,31 @@
       </div>
     </header>
     <div class="main-container">
-      <p class="titre_accueil">PROJECT PYTHON 🐍</p>
+      <p class="titre_accueil">PROJET PYTHON 🐍</p>
       <a href="page_cours.html" class="cta-button">📖 Commencer les cours</a>
       <div id="streak-container">🔥 <span id="streak-count">0</span></div>
     </div>
     <script src="script_streak.js"></script>
+    <script>
+      const video = document.getElementById("bg-video");
+    
+      video.addEventListener("loadedmetadata", () => {
+        const delayBeforeRestart = 1000; // 1 seconde
+        const bufferTime = 0.1; // un mini écart avant la vraie fin
+    
+        function checkEnd() {
+          if (video.currentTime >= video.duration - bufferTime) {
+            video.pause();
+            setTimeout(() => {
+              video.currentTime = 0;
+              video.play();
+            }, delayBeforeRestart);
+          }
+          requestAnimationFrame(checkEnd);
+        }
+    
+        checkEnd();
+      });
+    </script>
   </body>
 </html>

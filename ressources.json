@@ -3,16 +3,18 @@
         "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/1_introduction.ipynb",
         "ressources": [
             { "text": "C'est quoi Python ? (FR)", "url": "https://fr.wikipedia.org/wiki/Python_(langage)" },
-            { "text": "Pourquoi apprendre Python ?", "url": "https://www.lebigdata.fr/pourquoi-apprendre-python" },
-            { "text": "Les avantages et inconvénients", "url": "https://www.youtube.com/watch?v=pgRsKEUcikc" },
+            { "text": "Pourquoi apprendre Python ? (FR)", "url": "https://www.lebigdata.fr/pourquoi-apprendre-python" },
+            { "text": "Les avantages et inconvénients (FR)", "url": "https://www.youtube.com/watch?v=pgRsKEUcikc" },
+            { "text": "Pros and cons (EN)", "url": "https://www.youtube.com/watch?v=Ou_hSDxzjMI&t=1s" },
             { "text": "Téléchargement Python", "url": "https://www.python.org/downloads/" }
         ]
     },
     "Variables et types": {
         "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/2_variables_types_interaction.ipynb",
         "ressources": [
-            { "text": "Les variables W3", "url": "https://www.w3schools.com/python/python_variables.asp" },
-            { "text": "Les types W3", "url": "https://www.w3schools.com/python/python_datatypes.asp" }
+            { "text": "Les variables (complet) (FR)", "url": "https://diveintopython.org/fr/learn/variables" },
+            { "text": "Variables (EN)", "url": "https://www.w3schools.com/python/python_variables.asp" },
+            { "text": "Types (EN)", "url": "https://www.w3schools.com/python/python_datatypes.asp" }
         ]
     },
     "Les chaînes de caractères": {
