@@ -7,6 +7,11 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
   </head>
   <body>
+    <video autoplay muted loop playsinline id="bg-video">
+      <source src="assets/background.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas les vidéos HTML5.
+    </video>
+    <div class="video-overlay"></div>
     <header>
       <div class="logo-container">
         <a href="https://www.univ-grenoble-alpes.fr/">
@@ -17,7 +22,7 @@
         <nav class="main-nav">
           <ul>
             <li>
-              <a href="page_accueil.html">PAGE D'ACCUEIL</a>
+              <a href="page_accueil.html">ACCUEIL</a>
               <span class="triangle"></span>
             </li>
             <li>
@@ -34,9 +39,6 @@
     </header>
     <div class="main-container">
       <p class="titre_accueil">PROJECT PYTHON 🐍</p>
-      <div class="progress-container">
-        <div class="progress-bar" id="progressBar"></div>
-      </div>
       <a href="page_cours.html" class="cta-button">📖 Commencer les cours</a>
       <div id="streak-container">🔥 <span id="streak-count">0</span></div>
     </div>
