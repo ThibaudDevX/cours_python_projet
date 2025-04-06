@@ -1,0 +1,109 @@
+<!-- CE SCRIPT A ETE LANCE DANS UN NAVIGATEUR ET ENREGISTRE
+ POUR FAIRE LE FOND DE LA PAGE D'ACCUEIL -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Autotype Intro</title>
+  <style>
+    body {
+      background-color: black;
+      color: #00ff00;
+      font-family: 'Courier New', monospace;
+      font-size: 1.2rem;
+      margin: 0;
+      padding: 2rem;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .terminal {
+      max-width: 800px;
+      white-space: pre-wrap;
+      line-height: 1.5;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      background-color: #00ff00;
+      animation: blink 0.8s steps(1) infinite;
+    }
+
+    .color1 { color: #569CD6; }
+    .color2 { color: #CE9178; }
+    .color3 { color: #6A9955; }
+    .color4 { color: #DCDCAA; }
+    /* COULEUR RANDOM POUR LES MOTS */
+
+    @keyframes blink {
+      50% { background-color: transparent; }
+    }
+  </style>
+</head>
+<body>
+  <div class="terminal" id="terminal"></div>
+  <script>
+    const text = `L2 MIASHS, bonjour.
+
+Bienvenue à bord, Commandant Javier.
+
+Le système de navigation de l’UGA-27 est instable.
+Aucun signal. Aucune aide.
+
+Nous avons codé. Nous avons appris.
+Un projet est né : interactif, autonome, en Python.
+
+Embarque avec nous.
+Tape. Résous. Progresse.
+
+Javier compte sur toi.
+
+Le savoir est notre carburant.
+Chaque ligne tapée redonne vie au système.
+
+Bonne chance.
+Joyce, Amélia, Alexandre, Thibaud.`;
+
+    const letterDelay = 35; /* VITESSE APPARITION DES LETTRES */
+    const colors = ["color1", "color2", "color3", "color4"];
+    const container = document.getElementById("terminal");
+    const words = text.match(/\S+\s*/g); // garde les mots et espaces
+    let index = 0;
+
+    function typeWord() {
+      if (index >= words.length) {
+        const cursor = document.createElement("span");
+        cursor.className = "cursor";
+        container.appendChild(cursor);
+        return;
+      }
+
+      const word = words[index];
+      const span = document.createElement("span");
+      span.className = colors[Math.floor(Math.random() * colors.length)];
+      container.appendChild(span);
+
+      let letterIndex = 0;
+
+      function typeLetter() {
+        if (letterIndex < word.length) {
+          span.textContent += word[letterIndex];
+          letterIndex++;
+          setTimeout(typeLetter, letterDelay);
+        } else {
+          index++;
+          setTimeout(typeWord, letterDelay);
+        }
+      }
+
+      typeLetter();
+    }
+
+    typeWord();
+  </script>
+</body>
+</html>
