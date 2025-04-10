@@ -1,4 +1,7 @@
 /* STYLES GLOBAUX */
+html, body {
+  height: 100dvh; /* dynamic viewport height pour mobile */
+}
 /* Assure que le body et le html prennent exactement 100% de la hauteur */
 html, body {
   margin: 0;
