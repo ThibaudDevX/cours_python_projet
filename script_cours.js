@@ -47,6 +47,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 coursDiv.appendChild(coursTitle);
                 coursDiv.appendChild(dropdownContent);
                 coursContainer.appendChild(coursDiv);
+
+                coursTitle.addEventListener("click", () => {
+                    // Ferme tous les autres dropdowns actifs
+                    document.querySelectorAll(".cours-container.active").forEach(container => {
+                        if (container !== coursDiv) {
+                            container.classList.remove("active");
+                        }
+                    });
+
+                    // Bascule l'état du menu cliqué
+                    coursDiv.classList.toggle("active");
+                });
             });
         })
         .catch(error => console.error("❌ Erreur lors du chargement des ressources :", error));

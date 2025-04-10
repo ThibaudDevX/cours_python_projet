@@ -211,7 +211,7 @@ header {
 }
 
 /* 📌 Afficher le menu déroulant au survol */
-.cours-container:hover .dropdown-content {
+.cours-container.active .dropdown-content {
     display: block;
 }
 
@@ -241,7 +241,6 @@ header {
     position: relative; /* ✅ Nécessaire pour la gestion du dropdown */
 }
 
-.cours-container:hover .dropdown-content,
 .cours-container:hover::after {
     display: block;
 }
