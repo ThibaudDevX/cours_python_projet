@@ -4,7 +4,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: transparent;
+  background-color: black; /* anciennement transparent */
   color: #333;
   height: 100vh; /* Change min-height en height pour éviter le scroll */
   overflow: hidden; /* Supprime tout scroll inutile */
@@ -18,6 +18,8 @@ header {
   align-items: center;
   min-height: 70px;
   border-bottom: 1px solid #ccc;
+  position: relative;
+  z-index: 0; /* Au-dessus de la vidéo et de l’overlay */
 }
 
 /* Logo */
@@ -86,6 +88,8 @@ header {
   gap: 30px; /* Ajoute un espace entre les éléments */
   padding: 20px; /* Ajoute un peu d'espace autour des éléments */
   box-sizing: border-box; /* Évite les débordements */
+  position: relative;
+  z-index: 0; /* Au-dessus de la vidéo et de l’overlay */
 }
 
 /* TITRE */
@@ -157,12 +161,11 @@ header {
 
 #bg-video {
   position: fixed;
-  top: 30%;
+  top: 50%;
   left: 50%;
   min-width: 100%;
   min-height: 100%;
   transform: translate(-50%, -50%);
-  z-index: -1;
   object-fit: cover;
 }
 
@@ -173,5 +176,4 @@ header {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7); /* noir avec 40% d'opacité */
-  z-index: -1;
 }
