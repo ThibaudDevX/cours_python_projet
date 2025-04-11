@@ -70,17 +70,10 @@ Une livraison doit être effectuée sur Mars, à 225 millions de km d'ici.
 Vous êtes la seule personne en mesure de réussir un tel défi. 
 Afin d'y arriver il vous faudra taper, réfléchir et progresser.
 
-Le savoir est notre carburant.
-Chaque ligne tapée nous guide vers notre destination.
-
 Bonne chance.
 Joyce, Amélia, Alexandre, Thibaud.
 
-Décollage dans,
-
-[slow]  5
-
-[slow]  4
+[normal]  Décollage dans,
 
 [slow]  3
 
@@ -93,7 +86,7 @@ Décollage dans,
     const container = document.getElementById("terminal");
     const words = text.match(/\S+\s*/g); // garde les mots et espaces
     let index = 0;
-    let letterDelay = 10;
+    let letterDelay = 35;
 
     function typeWord() {
       if (index >= words.length) {
