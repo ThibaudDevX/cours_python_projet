@@ -17,16 +17,8 @@
             { "text": "Types (EN)", "url": "https://www.w3schools.com/python/python_datatypes.asp" }
         ]
     },
-    "Les chaînes de caractères": {
-        "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/3_chaines_caracteres.ipynb",
-        "ressources": [
-            { "text": "Introduction aux Strings", "url": "https://realpython.com/python-strings/" },
-            { "text": "Les bases des chaînes", "url": "https://www.w3schools.com/python/python_strings.asp" },
-            { "text": "Les méthodes des chaînes", "url": "https://www.w3schools.com/python/python_ref_string.asp" }
-        ]
-    },
     "Les conditions": {
-        "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/4_conditions.ipynb",
+        "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/3_conditions.ipynb",
         "ressources": [
             { "text": "Les conditions W3", "url": "https://www.w3schools.com/python/python_conditions.asp" },
             { "text": "Les conditions GFG", "url": "https://www.geeksforgeeks.org/conditional-statements-in-python/" },
@@ -34,11 +26,19 @@
         ]
     },
     "Les boucles": {
-        "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/5_boucles.ipynb",
+        "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/4_boucles.ipynb",
         "ressources": [
             { "text": "Les boucles CP", "url": "https://courspython.com/boucles.html" },
             { "text": "Les boucles W3", "url": "https://www.w3schools.com/python/python_for_loops.asp" },
             { "text": "La boucle for ORG", "url": "https://wiki.python.org/moin/ForLoop" }
+        ]
+    },
+    "Les chaînes de caractères": {
+        "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/5_chaines_caracteres.ipynb",
+        "ressources": [
+            { "text": "Introduction aux Strings", "url": "https://realpython.com/python-strings/" },
+            { "text": "Les bases des chaînes", "url": "https://www.w3schools.com/python/python_strings.asp" },
+            { "text": "Les méthodes des chaînes", "url": "https://www.w3schools.com/python/python_ref_string.asp" }
         ]
     },
     "Les listes": {
