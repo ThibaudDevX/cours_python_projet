@@ -1,0 +1,42 @@
+Structure du cours de L1 Java (Benoit Lemaire) par Chaptires :
+
+1. Introduction
+    C'est quoi un programme informatique ? (recette de cuisine)
+    Comment l'ordinateur comprend ? (syntaxe)
+
+2. Premiers éléments de programmation
+    Sortie/Ecriture (Sop => print)
+    Entrée/Lecture (Scanner => input + variables/types)
+
+3. Représentation des informations dans l'ordinateur
+    Codage binaire/Babylonien
+    Base 2,10,16...
+    Représentation nombres décimaux
+    Représentation des entiers négatifs
+    Additions
+    Représentation des réels
+    Représentation des textes (ascii)
+
+4. Les variables
+    Types prédéfinis
+    Affectation (pas une égalité)
+    Opérateurs
+    Conversion (cast => type)
+
+5. Les tests
+    if
+    Opérateurs logiques (==, !=, &&, || => ==, !=, and, or)
+    else
+    if imbriqués
+    else if
+    booléen
+
+6. Les itérations
+    while (compteur + condition arret/poursuite + incrémentation)
+    tests dans boucle
+    do while
+
+7. Type string
+    concaténation chaines
+    fonction chaines
+    
