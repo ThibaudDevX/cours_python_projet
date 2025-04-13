@@ -62,24 +62,15 @@
   <button id="nextBtn">Accéder au notebook</button>
   <script>
     const text = `
-Bienvenue à bord.
+[normal]Depuis la rencontre du vaisseau marchand vous avez beaucoup appris...
 
-Votre objectif est de vous assurer que le vaisseau UGA-25 arrive à destination.
-Une livraison doit être effectuée sur Mars, à 225 millions de km d'ici.
+[normal]Mais apprendre du théorique ce n'est pas tout.
+[normal]En effet, il s'agirait de s'organiser un peu mieux.
 
-Vous êtes la seule personne en mesure de réussir un tel défi. 
-Afin d'y arriver il vous faudra taper, réfléchir et progresser.
+[normal]Nous avons acquis de nouvelles cargaisons mais nous n'avons pas tenus les comptes.
+[normal]Comment pouvons nous mener à bien notre mission si nous ne sommes pas capables de tenir un inventaire ?
 
-Bonne chance.
-Joyce, Amélia, Alexandre, Thibaud.
-
-[normal]  Décollage dans,
-
-[slow]  3
-
-[slow]  2
-
-[slow]  1
+[slow]Il faut vite trouver une solution à ce problème !
 `;
 
     const colors = ["color1", "color2", "color3", "color4"];
@@ -122,7 +113,7 @@ Joyce, Amélia, Alexandre, Thibaud.
 
       function detectSpeedMarker(word) {
         if (word.startsWith("[slow]")) {
-          letterDelay = 100;
+          letterDelay = 50;
           return word.replace("[slow]", "");
         } else if (word.startsWith("[fast]")) {
           letterDelay = 20;
@@ -141,7 +132,7 @@ Joyce, Amélia, Alexandre, Thibaud.
   </script>
   <script>
     document.getElementById("nextBtn").addEventListener("click", function () {
-      window.location.href = "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/2_variables_types_interaction.ipynb";
+      window.location.href = "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/7_listes.ipynb";
     });
   </script>
 </body>

@@ -62,16 +62,16 @@
   <button id="nextBtn">Accéder au notebook</button>
   <script>
     const text = `
-Vous avez enfin décollé, votre veritable voyage peut enfin commencer.
+[normal]Vous avez enfin décollé, votre veritable voyage peut alors commencer.
 
-Faut-il être pressé ? impatient ? prudent ?
+[normal]Faut-il être pressé ? impatient ? prudent ?
 
-[slow] ...
+[slow]  ...
 
-Seul le temps nous le diras, je ne m'attend pas à un voyage tranquille,
-les problèmes peuvent arriver de toutes parts et il être pret !
+[normal]Seul le temps nous le diras.
+[normal]Je ne m'attend pas à un voyage tranquille, les problèmes peuvent arriver de toutes parts et il faut être pret !
 
-J'ai confiance en vous, continuez comme ça.
+[normal]J'ai confiance en vous, continuez comme ça.
 `;
 
     const colors = ["color1", "color2", "color3", "color4"];
@@ -120,7 +120,7 @@ J'ai confiance en vous, continuez comme ça.
           letterDelay = 20;
           return word.replace("[fast]", "");
         } else if (word.startsWith("[normal]")) {
-          letterDelay = 50;
+          letterDelay = 35;
           return word.replace("[normal]", "");
         }
         return word;

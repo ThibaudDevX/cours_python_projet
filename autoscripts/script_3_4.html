@@ -62,24 +62,13 @@
   <button id="nextBtn">Accéder au notebook</button>
   <script>
     const text = `
-Bienvenue à bord.
+[normal]Félicitation, vous avez maintenant appris à manipuler les conditions et à vous en servir pour prévenir toutes sortes de problèmes techniques qui pourraient mettre la mission en péril.
 
-Votre objectif est de vous assurer que le vaisseau UGA-25 arrive à destination.
-Une livraison doit être effectuée sur Mars, à 225 millions de km d'ici.
+[normal]Nous allons sous peu passer en vitesse supersonique et effectuer des tâches de maintenance...
 
-Vous êtes la seule personne en mesure de réussir un tel défi. 
-Afin d'y arriver il vous faudra taper, réfléchir et progresser.
+[normal]Tout cela à l'air barbant, mais rassurez vous, il existe bien des façons de rendre ça rapide et pratique !
 
-Bonne chance.
-Joyce, Amélia, Alexandre, Thibaud.
-
-[normal]  Décollage dans,
-
-[slow]  3
-
-[slow]  2
-
-[slow]  1
+[normal]Effectuez un pas de plus dans l'inconnu, vous êtes sur la bonne voie !
 `;
 
     const colors = ["color1", "color2", "color3", "color4"];
@@ -128,7 +117,7 @@ Joyce, Amélia, Alexandre, Thibaud.
           letterDelay = 20;
           return word.replace("[fast]", "");
         } else if (word.startsWith("[normal]")) {
-          letterDelay = 50;
+          letterDelay = 35;
           return word.replace("[normal]", "");
         }
         return word;
@@ -141,7 +130,7 @@ Joyce, Amélia, Alexandre, Thibaud.
   </script>
   <script>
     document.getElementById("nextBtn").addEventListener("click", function () {
-      window.location.href = "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/2_variables_types_interaction.ipynb";
+      window.location.href = "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/4_boucles.ipynb";
     });
   </script>
 </body>

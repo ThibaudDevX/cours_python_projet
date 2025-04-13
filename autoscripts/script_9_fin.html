@@ -31,12 +31,6 @@
       animation: blink 0.8s steps(1) infinite;
     }
 
-    .color1 { color: #569CD6; }
-    .color2 { color: #CE9178; }
-    .color3 { color: #6A9955; }
-    .color4 { color: #DCDCAA; }
-    /* COULEUR RANDOM POUR LES MOTS */
-
     @keyframes blink {
       50% { background-color: transparent; }
     }
@@ -62,49 +56,54 @@
   <button id="nextBtn">Accéder au notebook</button>
   <script>
     const text = `
-Bienvenue à bord.
+[normal]Bonjour,
 
-Votre objectif est de vous assurer que le vaisseau UGA-25 arrive à destination.
-Une livraison doit être effectuée sur Mars, à 225 millions de km d'ici.
+[normal]C'est le système qui vous parle.
 
-Vous êtes la seule personne en mesure de réussir un tel défi. 
-Afin d'y arriver il vous faudra taper, réfléchir et progresser.
+[normal]Vous qui avez su mener cette mission avec brio.
+[normal]Vous qui avez fait face aux obstacles qui se sont dressés sur votre route.
+[normal]Vous qui avez sû vous reorganiser, transformer votre façon d'agir et de réfléchir...
 
-Bonne chance.
-Joyce, Amélia, Alexandre, Thibaud.
+[normal]Je vous transmet ce message pour vous informer de la fin de votre mission.
+[normal]Profitez des moments qu'il vous reste avant l'amarage du vaisseau, je m'occupe de tout.
 
-[normal]  Décollage dans,
+[normal]Merci.
 
-[slow]  3
+[normal]Le système.
+[vs]  .
+[vs]  .
+[vs]  .
+[normal]Ah,
 
-[slow]  2
+[normal]Une dernière chose,
 
-[slow]  1
+[normal]Un message intergalactique a été intercepté peu avant notre arrivée.
+
+[normal]Une prime de 1 000 000 de courones spatiales est promise à quiconque stoppera un pirate de l'espace nommé Albator.
+
+[normal]A vous de voir, qui sait, peut être excellez-vous également dans ce domaine...
+[vs]  .
+[vs]  .
+[vs]  .
+[normal]Joyce, Amélia, Alexandre, Thibaud.
 `;
 
     const colors = ["color1", "color2", "color3", "color4"];
     const container = document.getElementById("terminal");
     const words = text.match(/\S+\s*/g); // garde les mots et espaces
     let index = 0;
-    let letterDelay = 35;
+    let letterDelay = 60;
 
     function typeWord() {
       if (index >= words.length) {
         const cursor = document.createElement("span");
         cursor.className = "cursor";
         container.appendChild(cursor);
-
-        // ✅ Affiche le bouton après 1 seconde
-        setTimeout(() => {
-          document.getElementById("nextBtn").style.display = "block";
-        }, 1000);
-        return;
       }
 
       const word = words[index];
       const cleanedWord = detectSpeedMarker(word);
       const span = document.createElement("span");
-      span.className = colors[Math.floor(Math.random() * colors.length)];
       container.appendChild(span);
 
       let letterIndex = 0;
@@ -122,11 +121,11 @@ Joyce, Amélia, Alexandre, Thibaud.
 
       function detectSpeedMarker(word) {
         if (word.startsWith("[slow]")) {
-          letterDelay = 100;
+          letterDelay = 50;
           return word.replace("[slow]", "");
-        } else if (word.startsWith("[fast]")) {
-          letterDelay = 20;
-          return word.replace("[fast]", "");
+        } else if (word.startsWith("[vs]")) {
+          letterDelay = 90;
+          return word.replace("[vs]", "");
         } else if (word.startsWith("[normal]")) {
           letterDelay = 50;
           return word.replace("[normal]", "");
@@ -139,10 +138,12 @@ Joyce, Amélia, Alexandre, Thibaud.
 
     typeWord();
   </script>
+<!--
   <script>
     document.getElementById("nextBtn").addEventListener("click", function () {
       window.location.href = "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/2_variables_types_interaction.ipynb";
     });
   </script>
+-->
 </body>
 </html>
