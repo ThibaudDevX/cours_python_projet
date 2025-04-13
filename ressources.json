@@ -9,7 +9,7 @@
             { "text": "Téléchargement Python", "url": "https://www.python.org/downloads/" }
         ]
     },
-    "Variables et types": {
+    "Variables et Types": {
         "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/2_variables_types_interaction.ipynb",
         "ressources": [
             { "text": "Les variables (complet) (FR)", "url": "https://diveintopython.org/fr/learn/variables" },
@@ -17,7 +17,7 @@
             { "text": "Types (EN)", "url": "https://www.w3schools.com/python/python_datatypes.asp" }
         ]
     },
-    "Les conditions": {
+    "Les Conditions": {
         "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/3_conditions.ipynb",
         "ressources": [
             { "text": "Les conditions W3", "url": "https://www.w3schools.com/python/python_conditions.asp" },
@@ -25,7 +25,7 @@
             { "text": "Les conditions ORG", "url": "https://pythonbasics.org/if-statements/" }
         ]
     },
-    "Les boucles": {
+    "Les Boucles": {
         "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/4_boucles.ipynb",
         "ressources": [
             { "text": "Les boucles CP", "url": "https://courspython.com/boucles.html" },
@@ -33,7 +33,7 @@
             { "text": "La boucle for ORG", "url": "https://wiki.python.org/moin/ForLoop" }
         ]
     },
-    "Les chaînes de caractères": {
+    "Les Chaînes de caractères": {
         "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/5_chaines_caracteres.ipynb",
         "ressources": [
             { "text": "Introduction aux Strings", "url": "https://realpython.com/python-strings/" },
@@ -41,23 +41,23 @@
             { "text": "Les méthodes des chaînes", "url": "https://www.w3schools.com/python/python_ref_string.asp" }
         ]
     },
-    "Les listes": {
-        "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/6_listes.ipynb",
+    "Les Fonctions": {
+        "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/6_fonctions.ipynb",
         "ressources": [
             { "text": "Les boucles CP", "url": "https://courspython.com/boucles.html" },
             { "text": "Les boucles W3", "url": "https://www.w3schools.com/python/python_for_loops.asp" },
             { "text": "La boucle for ORG", "url": "https://wiki.python.org/moin/ForLoop" }
         ]
     },
-    "Les structures de données": {
-        "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/7_structure_donnees.ipynb",
+    "Les Listes": {
+        "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/7_listes.ipynb",
         "ressources": [
             { "text": "Les boucles CP", "url": "https://courspython.com/boucles.html" },
             { "text": "Les boucles W3", "url": "https://www.w3schools.com/python/python_for_loops.asp" },
             { "text": "La boucle for ORG", "url": "https://wiki.python.org/moin/ForLoop" }
         ]
     },
-    "Les dictionnaires": {
+    "Les Dictionnaires": {
         "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/8_dictionnaires.ipynb",
         "ressources": [
             { "text": "Les boucles CP", "url": "https://courspython.com/boucles.html" },
@@ -65,8 +65,8 @@
             { "text": "La boucle for ORG", "url": "https://wiki.python.org/moin/ForLoop" }
         ]
     },
-    "Les exceptions": {
-        "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/9_exceptions.ipynb",
+    "Les Bibliothèques": {
+        "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/9_bibliotheques.ipynb",
         "ressources": [
             { "text": "Les boucles CP", "url": "https://courspython.com/boucles.html" },
             { "text": "Les boucles W3", "url": "https://www.w3schools.com/python/python_for_loops.asp" },
