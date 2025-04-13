@@ -40,3 +40,11 @@ Structure du cours de L1 Java (Benoit Lemaire) par Chaptires :
     concaténation chaines
     fonction chaines
     
+
+Scénarios :
+    trouver une station avec notre carburant
+    panne énergétique
+    modification de trajectoire (meteorite)
+    esquiver ceinture d'asteroides
+    arrivee sur mars
+    transfert de donnees (in/out)
