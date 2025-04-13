@@ -42,9 +42,9 @@ Structure du cours de L1 Java (Benoit Lemaire) par Chaptires :
     
 
 Scénarios :
-    trouver une station avec notre carburant
-    panne énergétique
-    modification de trajectoire (meteorite)
-    esquiver ceinture d'asteroides
-    arrivee sur mars
-    transfert de donnees (in/out)
+    trouver une station avec notre carburant => liste de station avec True/False pour carburant
+    panne énergétique => liste des salle avec niveau d'électricité
+    modification de trajectoire (meteorite) => calcul trajectoire meteorite avec graphes (bibliotheque)
+    esquiver ceinture d'asteroides => exceptions 
+    arrivee sur mars => exceptions
+    transfert de donnees (in/out) => lecture/ecriture de fichiers
