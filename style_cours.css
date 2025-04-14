@@ -2,7 +2,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: gainsboro; /* Arrière-plan global */
+    background-color: black; /* Arrière-plan global */
     font-family: Arial, sans-serif;
     color: #333;
 }
@@ -16,6 +16,7 @@ header {
     align-items: center; /* Centre verticalement le contenu */
     min-height: 70px;
     border-bottom: 1px solid #ccc;
+    z-index: 0; /* Au-dessus de la vidéo et de l’overlay */
 }
 
 /* Logo */
@@ -111,13 +112,19 @@ header {
 
 /* Zone centrale pour écrire du contenu */
 .content-area {
+    z-index: 1;
     width: 80%; /* Ajuste la largeur à 80% de la page */
     max-width: 900px; /* Empêche la zone de devenir trop large */
     background-color: #ffffff; /* Fond blanc pour le contraste */
     padding: 20px; /* Espacement interne */
     margin: 30px auto; /* Centre la zone */
     border-radius: 8px; /* Coins arrondis */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet propre */
+    box-shadow:
+    0 0 5px rgba(237, 112, 45, 1),
+    0 0 10px rgba(237, 112, 45, 0.8),
+    0 0 15px rgba(237, 112, 45, 0.6),
+    0 0 20px rgba(237, 112, 45, 0.4),
+    0 0 25px rgba(237, 112, 45, 0.2);
 }
 
 /* Style du texte */
