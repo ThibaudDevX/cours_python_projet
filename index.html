@@ -43,26 +43,5 @@
       <div id="streak-container">🔥 <span id="streak-count">0</span></div>
     </div>
     <script src="script_streak.js"></script>
-    <script>
-      const video = document.getElementById("bg-video");
-    
-      video.addEventListener("loadedmetadata", () => {
-        const delayBeforeRestart = 1000; // 1 seconde
-        const bufferTime = 0.1; // un mini écart avant la vraie fin
-    
-        function checkEnd() {
-          if (video.currentTime >= video.duration - bufferTime) {
-            video.pause();
-            setTimeout(() => {
-              video.currentTime = 0;
-              video.play();
-            }, delayBeforeRestart);
-          }
-          requestAnimationFrame(checkEnd);
-        }
-    
-        checkEnd();
-      });
-    </script>
   </body>
 </html>
