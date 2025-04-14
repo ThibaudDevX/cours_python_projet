@@ -255,3 +255,22 @@ header {
     left: 0;
     background: transparent;
 }
+
+/* ajout id diaporama pour customiser pareil que les autres */
+/* il faudrait eventuellement faire du menage dans le css si on a le temps */
+
+#diaporama {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FF6600;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#diaporama a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #bc4b00;
+    padding: 10px;
+}
