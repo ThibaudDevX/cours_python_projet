@@ -5,6 +5,7 @@ html, body {
     background-color: black; /* Arrière-plan global */
     font-family: Arial, sans-serif;
     color: #333;
+    scrollbar-width: none;
 }
 
 /* HEADER (Bandeau) */
@@ -112,7 +113,6 @@ header {
 
 /* Zone centrale pour écrire du contenu */
 .content-area {
-    z-index: 1;
     width: 80%; /* Ajuste la largeur à 80% de la page */
     max-width: 900px; /* Empêche la zone de devenir trop large */
     background-color: #ffffff; /* Fond blanc pour le contraste */
@@ -120,11 +120,11 @@ header {
     margin: 30px auto; /* Centre la zone */
     border-radius: 8px; /* Coins arrondis */
     box-shadow:
-    0 0 5px rgba(237, 112, 45, 1),
-    0 0 10px rgba(237, 112, 45, 0.8),
-    0 0 15px rgba(237, 112, 45, 0.6),
-    0 0 20px rgba(237, 112, 45, 0.4),
-    0 0 25px rgba(237, 112, 45, 0.2);
+        0 0 5px rgba(237, 112, 45, 1),
+        0 0 10px rgba(237, 112, 45, 0.8),
+        0 0 15px rgba(237, 112, 45, 0.6),
+        0 0 20px rgba(237, 112, 45, 0.4),
+        0 0 25px rgba(237, 112, 45, 0.2);
 }
 
 /* Style du texte */

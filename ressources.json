@@ -102,7 +102,9 @@
         "ressources": [
             { "text": "Les objets W3", "url": "https://www.w3schools.com/python/python_classes.asp" },
             { "text": "La portée des variables PG", "url": "https://www.pierre-giraud.com/python-apprendre-programmer-cours/portee-variable/" },
-            { "text": "La portée des variables DC", "url": "https://www.datacamp.com/fr/tutorial/scope-of-variables-python" }
+            { "text": "La portée des variables DC", "url": "https://www.datacamp.com/fr/tutorial/scope-of-variables-python" },
+            { "text": "La portée des variables DR", "url": "https://www.datacamp.com/fr/tutorial/scope-of-variables-python" },
+            { "text": "La portée des variables DW", "url": "https://www.datacamp.com/fr/tutorial/scope-of-variables-python" }
         ]
     }
 }
