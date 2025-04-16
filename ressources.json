@@ -6,7 +6,9 @@
             { "text": "Pourquoi apprendre Python ? (FR)", "url": "https://www.lebigdata.fr/pourquoi-apprendre-python" },
             { "text": "Les avantages et inconvénients (FR)", "url": "https://www.youtube.com/watch?v=pgRsKEUcikc" },
             { "text": "Pros and cons (EN)", "url": "https://www.youtube.com/watch?v=Ou_hSDxzjMI&t=1s" },
-            { "text": "Téléchargement Python", "url": "https://www.python.org/downloads/" }
+            { "text": "Téléchargement Python", "url": "https://www.python.org/downloads/" },
+            {"text": "Coding Bat, plateforme d'exos d'entrainement", "url": "https://codingbat.com/python" }
+            
         ]
     },
     "Variables et Types": {
@@ -14,7 +16,8 @@
         "ressources": [
             { "text": "Les variables (complet) (FR)", "url": "https://diveintopython.org/fr/learn/variables" },
             { "text": "Variables (EN)", "url": "https://www.w3schools.com/python/python_variables.asp" },
-            { "text": "Types (EN)", "url": "https://www.w3schools.com/python/python_datatypes.asp" }
+            { "text": "Types (EN)", "url": "https://www.w3schools.com/python/python_datatypes.asp" },
+            { "text": "Exos Coding Bat", "url": "https://codingbat.com/python/Warmup-1" }
         ]
     },
     "Les Conditions": {
@@ -22,7 +25,8 @@
         "ressources": [
             { "text": "Les conditions W3", "url": "https://www.w3schools.com/python/python_conditions.asp" },
             { "text": "Les conditions GFG", "url": "https://www.geeksforgeeks.org/conditional-statements-in-python/" },
-            { "text": "Les conditions ORG", "url": "https://pythonbasics.org/if-statements/" }
+            { "text": "Les conditions ORG", "url": "https://pythonbasics.org/if-statements/" },
+            { "text": "Exos Coding Bat", "url": "https://codingbat.com/python/Warmup-1"}
         ]
     },
     "Les Boucles": {
@@ -38,7 +42,8 @@
         "ressources": [
             { "text": "Introduction aux Strings", "url": "https://realpython.com/python-strings/" },
             { "text": "Les bases des chaînes", "url": "https://www.w3schools.com/python/python_strings.asp" },
-            { "text": "Les méthodes des chaînes", "url": "https://www.w3schools.com/python/python_ref_string.asp" }
+            { "text": "Les méthodes des chaînes", "url": "https://www.w3schools.com/python/python_ref_string.asp" },
+            { "text": "Exos Coding Bat", "url": "https://codingbat.com/python/String-1"}
         ]
     },
     "Les Fonctions": {
@@ -54,7 +59,8 @@
         "ressources": [
             { "text": "Les boucles CP", "url": "https://courspython.com/boucles.html" },
             { "text": "Les boucles W3", "url": "https://www.w3schools.com/python/python_for_loops.asp" },
-            { "text": "La boucle for ORG", "url": "https://wiki.python.org/moin/ForLoop" }
+            { "text": "La boucle for ORG", "url": "https://wiki.python.org/moin/ForLoop" },
+            { "text": "Exos Coding Bat", "url": "https://codingbat.com/python/Warmup-2" }
         ]
     },
     "Les Dictionnaires": {
