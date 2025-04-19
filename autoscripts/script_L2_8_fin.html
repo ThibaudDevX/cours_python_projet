@@ -31,12 +31,6 @@
       animation: blink 0.8s steps(1) infinite;
     }
 
-    .color1 { color: #569CD6; }
-    .color2 { color: #CE9178; }
-    .color3 { color: #6A9955; }
-    .color4 { color: #DCDCAA; }
-    /* COULEUR RANDOM POUR LES MOTS */
-
     @keyframes blink {
       50% { background-color: transparent; }
     }
@@ -62,44 +56,45 @@
   <button id="nextBtn">Accéder au notebook</button>
   <script>
     const text = `
-[normal]Grace à vous, les réglages de vitesse du vaisseau sont OK 
+[normal]"Bonjour,
 
-[normal]Le voyage vers la Terre peut débuter sans encombres ... OH NON ! ALERTE ROUGE !
+[normal]C'est le J-4V1-3R qui vous parle.
 
-[normal]Il semble que les ennuis commencent  
-[normal]Mais pas de panique. 
+[normal]Je suis enfin de retour sur Terre grâce à vous. 
+[normal]Vous m'avez tant aidé, face aux ennemis et aux nombreux défis que nous avons rencontrés.
+[normal]Vous avez sû vous reorganiser, transformer votre façon d'agir et de réfléchir...
 
-[normal]J-4V1-3R sait que vous êtes digne de confiance ! 
+[normal]Je vous transmet ce message pour vous informer de la fin de votre mission.
 
-[normal]Vos connaissances sur les opérateurs seront précieuses pour abattre l'ennemi.
+[normal]Mon voyage est arrivé à sa fin , mais ce n'est que le début du votre. 
 
- 
+[normal]Je vous dis aurevoir et vous souhaite bonne continuation . 
 
+[normal]Merci.
+
+[normal] J-4V1-3R .
+[vs]  .
+[vs]  .
+[vs]  .
+[normal]Joyce, Amélia, Alexandre, Thibaud.
 `;
 
     const colors = ["color1", "color2", "color3", "color4"];
     const container = document.getElementById("terminal");
     const words = text.match(/\S+\s*/g); // garde les mots et espaces
     let index = 0;
-    let letterDelay = 35;
+    let letterDelay = 60;
 
     function typeWord() {
       if (index >= words.length) {
         const cursor = document.createElement("span");
         cursor.className = "cursor";
         container.appendChild(cursor);
-
-        // ✅ Affiche le bouton après 1 seconde
-        setTimeout(() => {
-          document.getElementById("nextBtn").style.display = "block";
-        }, 1000);
-        return;
       }
 
       const word = words[index];
       const cleanedWord = detectSpeedMarker(word);
       const span = document.createElement("span");
-      span.className = colors[Math.floor(Math.random() * colors.length)];
       container.appendChild(span);
 
       let letterIndex = 0;
@@ -119,9 +114,9 @@
         if (word.startsWith("[slow]")) {
           letterDelay = 50;
           return word.replace("[slow]", "");
-        } else if (word.startsWith("[fast]")) {
-          letterDelay = 20;
-          return word.replace("[fast]", "");
+        } else if (word.startsWith("[vs]")) {
+          letterDelay = 90;
+          return word.replace("[vs]", "");
         } else if (word.startsWith("[normal]")) {
           letterDelay = 50;
           return word.replace("[normal]", "");
@@ -134,10 +129,12 @@
 
     typeWord();
   </script>
+<!--
   <script>
     document.getElementById("nextBtn").addEventListener("click", function () {
-      window.location.href = "https://colab.research.google.com/github.com/ThibaudDevX/cours_python_projet/blob/main/notebooks/cours_3_L2.ipynb";
+      window.location.href = "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/2_variables_types_interaction.ipynb";
     });
   </script>
+-->
 </body>
 </html>
