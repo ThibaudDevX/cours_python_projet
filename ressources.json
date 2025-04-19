@@ -86,13 +86,19 @@
             { "text": "Les boucles W3", "url": "https://www.w3schools.com/python/python_for_loops.asp" },
             { "text": "La boucle for ORG", "url": "https://wiki.python.org/moin/ForLoop" }
         ]
-    },
-    "L2 : Les objets en Python": {
-        "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/cours_2_L2.ipynb",
+    }, "L2 : Introduction a la Programmation Orientée Objet en Python": {
+        "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/cours_1_L2.ipynb",
         "ressources": [
             { "text": "Les objets W3", "url": "https://www.w3schools.com/python/python_classes.asp" },
             { "text": "La portée des variables PG", "url": "https://www.pierre-giraud.com/python-apprendre-programmer-cours/portee-variable/" },
             { "text": "La portée des variables DC", "url": "https://www.datacamp.com/fr/tutorial/scope-of-variables-python" }
+        ]
+    },
+    "L2 : Les objets en Python": {
+        "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/cours_2_L2.ipynb",
+        "ressources": [
+           
+        
         ]
     },
     "L2 : Les opérateurs : notions avancées": {
