@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Autotype Intro</title>
+  <style>
+    body {
+      background-color: black;
+      color: #00ff00;
+      font-family: 'Courier New', monospace;
+      font-size: 1.2rem;
+      margin: 0;
+      padding: 2rem;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .terminal {
+      max-width: 800px;
+      white-space: pre-wrap;
+      line-height: 1.5;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      background-color: #00ff00;
+      animation: blink 0.8s steps(1) infinite;
+    }
+
+    .color1 { color: #569CD6; }
+    .color2 { color: #CE9178; }
+    .color3 { color: #6A9955; }
+    .color4 { color: #DCDCAA; }
+    /* COULEUR RANDOM POUR LES MOTS */
+
+    @keyframes blink {
+      50% { background-color: transparent; }
+    }
+
+    #nextBtn {
+      background-color: rgba(255, 255, 255, 0.05);
+      color: #569CD6;
+      border: 1px solid #569CD6;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      font-family: 'Courier New', monospace;
+      cursor: pointer;
+      display: none;
+      margin-top: 1.5rem;
+    }
+    #nextBtn:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="terminal" id="terminal"></div>
+  <button id="nextBtn">Accéder au notebook</button>
+  <script>
+    const text = `
+[normal]Depuis la rencontre du vaisseau marchand vous avez beaucoup appris...
+
+[normal]Mais apprendre du théorique ce n'est pas tout.
+[normal]En effet, il s'agirait de s'organiser un peu mieux.
+
+[normal]Nous avons acquis de nouvelles cargaisons mais nous n'avons pas tenus les comptes.
+[normal]Comment pouvons nous mener à bien notre mission si nous ne sommes pas capables de tenir un inventaire ?
+
+[slow]Il faut vite trouver une solution à ce problème !
+`;
+
+    const colors = ["color1", "color2", "color3", "color4"];
+    const container = document.getElementById("terminal");
+    const words = text.match(/\S+\s*/g); // garde les mots et espaces
+    let index = 0;
+    let letterDelay = 35;
+
+    function typeWord() {
+      if (index >= words.length) {
+        const cursor = document.createElement("span");
+        cursor.className = "cursor";
+        container.appendChild(cursor);
+
+        // ✅ Affiche le bouton après 1 seconde
+        setTimeout(() => {
+          document.getElementById("nextBtn").style.display = "block";
+        }, 1000);
+        return;
+      }
+
+      const word = words[index];
+      const cleanedWord = detectSpeedMarker(word);
+      const span = document.createElement("span");
+      span.className = colors[Math.floor(Math.random() * colors.length)];
+      container.appendChild(span);
+
+      let letterIndex = 0;
+
+      function typeLetter() {
+        if (letterIndex < word.length) {
+          span.textContent += cleanedWord.charAt(letterIndex);
+          letterIndex++;
+          setTimeout(typeLetter, letterDelay);
+        } else {
+          index++;
+          setTimeout(typeWord, letterDelay);
+        }
+      }
+
+      function detectSpeedMarker(word) {
+        if (word.startsWith("[slow]")) {
+          letterDelay = 50;
+          return word.replace("[slow]", "");
+        } else if (word.startsWith("[fast]")) {
+          letterDelay = 20;
+          return word.replace("[fast]", "");
+        } else if (word.startsWith("[normal]")) {
+          letterDelay = 50;
+          return word.replace("[normal]", "");
+        }
+        return word;
+      }
+
+      typeLetter();
+    }
+
+    typeWord();
+  </script>
+  <script>
+    document.getElementById("nextBtn").addEventListener("click", function () {
+      window.location.href = "https://colab.research.google.com/github.com/ThibaudDevX/cours_python_projet/blob/main/notebooks/cours_2_L2.ipynb";
+    });
+  </script>
+</body>
+</html>
