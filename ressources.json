@@ -129,7 +129,7 @@
     "L2 : Réutilisation des classes " : {
         "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/cours_6_L2.ipynb",
         "ressources": [
-            { "text": "L'héritage W3", "url": "https://www.w3schools.com/python/python_inheritance.asp" },
+            { "text": "L'héritage W3", "url": "https://www.w3schools.com/python/python_inheritance.asp" }
 
             
         ]
@@ -146,7 +146,7 @@
 "L2 : Gestion des erreurs et exceptions " : {
     "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/cours_8_L2.ipynb",
     "ressources": [
-        { "text": "Try Except W3", "url": "https://www.w3schools.com/python/python_try_except.asp" },
+        { "text": "Try Except W3", "url": "https://www.w3schools.com/python/python_try_except.asp" }
         
         
     ]
