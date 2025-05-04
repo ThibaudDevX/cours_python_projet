@@ -138,7 +138,7 @@
     "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/cours_7_L2.ipynb",
     "ressources": [
             { "text": "Le polymorphisme W3", "url": "https://www.w3schools.com/python/python_polymorphism.asp" },
-           { "text" : "Les casses abstraites DC", "url" : "https://docs.python.org/fr/3.13/library/abc.html" } 
+           { "text" : "Les classes abstraites DC", "url" : "https://docs.python.org/fr/3.13/library/abc.html" } 
         
     ]
 
