@@ -89,14 +89,16 @@
     }, "L2 : Introduction a la Programmation Orientée Objet en Python": {
         "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/cours_1_L2.ipynb",
         "ressources": [
-            { "text": "Les objets W3", "url": "https://www.w3schools.com/python/python_classes.asp" },
-            { "text": "La portée des variables PG", "url": "https://www.pierre-giraud.com/python-apprendre-programmer-cours/portee-variable/" },
-            { "text": "La portée des variables DC", "url": "https://www.datacamp.com/fr/tutorial/scope-of-variables-python" }
+            { "text": "La programmation orientée objet", "url": "https://python.developpez.com/cours/apprendre-python-3/?page=la-programmation-orientee-objet" }
+
         ]
     },
     "L2 : Les objets en Python": {
         "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/cours_2_L2.ipynb",
         "ressources": [
+        { "text": "Les objets W3", "url": "https://www.w3schools.com/python/python_classes.asp" },
+        { "text": "La portée des variables PG", "url": "https://www.pierre-giraud.com/python-apprendre-programmer-cours/portee-variable/" },
+        { "text": "La portée des variables DC", "url": "https://www.datacamp.com/fr/tutorial/scope-of-variables-python" }
            
         
         ]
@@ -104,39 +106,39 @@
     "L2 : Les opérateurs : notions avancées": {
         "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/cours_3_L2.ipynb",
         "ressources": [
-            { "text": "Les objets W3", "url": "https://www.w3schools.com/python/python_classes.asp" },
-            { "text": "La portée des variables PG", "url": "https://www.pierre-giraud.com/python-apprendre-programmer-cours/portee-variable/" },
-            { "text": "La portée des variables DC", "url": "https://www.datacamp.com/fr/tutorial/scope-of-variables-python" }
+            { "text": "Les opérateurs W3", "url": "https://www.w3schools.com/python/python_operators.asp" },
+            { "text": "La opérateurs BP", "url": "https://bouquinpython.readthedocs.io/fr/latest/operateurs.html" }
         ]
     },
     "L2 : Structures de contrôle et listes ": {
         "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/cours_4_L2.ipynb",
         "ressources": [
-            { "text": "Les objets W3", "url": "https://www.w3schools.com/python/python_classes.asp" },
-            { "text": "La portée des variables PG", "url": "https://www.pierre-giraud.com/python-apprendre-programmer-cours/portee-variable/" },
-            { "text": "La portée des variables DC", "url": "https://www.datacamp.com/fr/tutorial/scope-of-variables-python" },
-            { "text": "La portée des variables DR", "url": "https://www.datacamp.com/fr/tutorial/scope-of-variables-python" },
-            { "text": "La portée des variables DW", "url": "https://www.datacamp.com/fr/tutorial/scope-of-variables-python" }
+            { "text": "Les listes W3", "url": "https://www.w3schools.com/python/python_lists.asp" },
+            { "text": "Les tuples W3", "url": "https://www.w3schools.com/python/python_tuples.asp" },
+            { "text": "Les listes BP", "url": "https://bouquinpython.readthedocs.io/fr/latest/listes.html" },
+            { "text": "Les tuples BP", "url": "https://bouquinpython.readthedocs.io/fr/latest/tuples.html" }
         ]
     }, 
     "L2 : Constructeurs, Modules et Encapsulation en Python " : {
         "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/cours_5_L2.ipynb",
         "ressources": [
-            
+            { "text": "L'initialisation W3", "url": "https://www.w3schools.com/python/python_inheritance.asp" }
             
         ]
     },
     "L2 : Réutilisation des classes " : {
         "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/cours_6_L2.ipynb",
         "ressources": [
-            
+            { "text": "L'héritage W3", "url": "https://www.w3schools.com/python/python_inheritance.asp" },
+
             
         ]
 },
 "L2 : Concepts avancées de programmation par objet  " : {
     "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/cours_7_L2.ipynb",
     "ressources": [
-        
+            { "text": "Le polymorphisme W3", "url": "https://www.w3schools.com/python/python_polymorphism.asp" },
+           { "text" : "Les casses abstraites DC", "url" : "https://docs.python.org/fr/3.13/library/abc.html" } 
         
     ]
 
@@ -144,6 +146,7 @@
 "L2 : Gestion des erreurs et exceptions " : {
     "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/cours_8_L2.ipynb",
     "ressources": [
+        { "text": "Try Except W3", "url": "https://www.w3schools.com/python/python_try_except.asp" },
         
         
     ]
