@@ -89,7 +89,8 @@
     }, "L2 : Introduction a la Programmation Orientée Objet en Python": {
         "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/cours_1_L2.ipynb",
         "ressources": [
-            { "text": "La programmation orientée objet", "url": "https://python.developpez.com/cours/apprendre-python-3/?page=la-programmation-orientee-objet" }
+            { "text": "La programmation orientée objet P", "url": "https://python.developpez.com/cours/apprendre-python-3/?page=la-programmation-orientee-objet" },
+            { "text": "La programmation orientée objet CP", "url": "https://courspython.com/classes-et-objets.html#breve-introduction-a-la-programmation-orientee-objet" }
 
         ]
     },
@@ -122,7 +123,8 @@
     "L2 : Constructeurs, Modules et Encapsulation en Python " : {
         "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/cours_5_L2.ipynb",
         "ressources": [
-            { "text": "L'initialisation W3", "url": "https://www.w3schools.com/python/python_inheritance.asp" }
+            { "text": "L'initialisation W3", "url": "https://www.w3schools.com/python/python_inheritance.asp" },
+            { "text": "L'encapsulation CP", "url": "https://courspython.com/classes-et-objets.html" }
             
         ]
     },
