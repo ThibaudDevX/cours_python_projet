@@ -135,24 +135,21 @@
 
             
         ]
-},
-"L2 : Concepts avancées de programmation par objet  " : {
-    "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/cours_7_L2.ipynb",
-    "ressources": [
+    },
+    "L2 : Concepts avancées de programmation par objet  " : {
+        "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/cours_7_L2.ipynb",
+        "ressources": [
             { "text": "Le polymorphisme W3", "url": "https://www.w3schools.com/python/python_polymorphism.asp" },
-           { "text" : "Les classes abstraites DC", "url" : "https://docs.python.org/fr/3.13/library/abc.html" } 
+            { "text" : "Les classes abstraites DC", "url" : "https://docs.python.org/fr/3.13/library/abc.html" } 
         
-    ]
+        ]
 
-},
-"L2 : Gestion des erreurs et exceptions " : {
-    "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/cours_8_L2.ipynb",
-    "ressources": [
-        { "text": "Try Except W3", "url": "https://www.w3schools.com/python/python_try_except.asp" }
+    },
+    "L2 : Gestion des erreurs et exceptions " : {
+        "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/cours_8_L2.ipynb",
+        "ressources": [
+            { "text": "Try Except W3", "url": "https://www.w3schools.com/python/python_try_except.asp" }
         
-        
-    ]
-}
-
-
+        ]
+    }
 }
