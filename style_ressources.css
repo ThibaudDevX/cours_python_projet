@@ -1,4 +1,4 @@
-/* STYLES GLOBAUX */
+/* globaux */
 html, body {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ html, body {
     scroll-behavior: smooth; /* Active un défilement fluide */
 }
 
-/* HEADER (Bandeau) */
+/* bandeau */
 header {
     background-color: #ffffff;
     padding: 10px 20px;
@@ -21,7 +21,7 @@ header {
     border-bottom: 1px solid #ccc;
 }
 
-/* Logo */
+/* logo */
 .logo-container img {
     max-height: 75px;
 }
@@ -33,7 +33,7 @@ header {
     transform: translateX(-50%);
 }
 
-/* BARRE DE NAVIGATION */
+/* navbar */
 .main-nav ul {
     display: flex;
     gap: 30px;
@@ -48,14 +48,14 @@ header {
     font-weight: bold;
 }
 
-/* Style des liens */
+/* liens */
 .main-nav a {
     text-decoration: none;
     color: #FF6600;
     transition: color 0.3s ease;
 }
 
-/* Triangle sous les liens */
+/* anim triangle bandeau */
 .main-nav li .triangle {
     position: absolute; /* Position absolue par rapport au lien */
     bottom: -17.5px; /* Place le triangle en dessous du texte */
@@ -74,14 +74,14 @@ header {
     opacity: 1;
 }
 
-/* CONTENEUR GLOBAL */
+/* conteneur global */
 .container {
     display: flex;
     flex-direction: row;
     height: calc(100vh - 70px);
 }
 
-/* ZONE GAUCHE (Sommaire) */
+/* sommaire */
 .sidebar {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -115,21 +115,21 @@ header {
     margin-bottom: 10px;
 }
 
-/* Style des liens dans la zone gauche */
+/* liens sommaire */
 .sidebar a {
     font-size: 14px;
-    text-decoration: none; /* Supprime le soulignement des liens */
+    text-decoration: none;
     color: #0077ff !important;
     font-weight: bold;
-    transition: color 0.3s ease; /* Transition fluide de la couleur */
+    transition: color 0.3s ease;
 }
 
 .sidebar a:hover {
     color: #00489a !important;
-    text-decoration: none; /* Supprime le soulignement au survol */
+    text-decoration: none;
 }
 
-/* ZONE CENTRALE (Contenu) */
+/* cours dans le central */
 .main-content {
     border-radius: 8px;
     flex: 1;
@@ -164,7 +164,7 @@ header {
     position: relative;
 }
 
-/* Style des liens dans la zone centrale */
+/* liens centraux */
 .main-content a {
     position: relative;
     text-decoration: none;
@@ -177,7 +177,7 @@ header {
     color: #a54200;
 }
 
-/* Triangle à droite des liens */
+/* anim triangle cours */
 .main-content a::after {
     content: "";
     position: absolute;
@@ -199,7 +199,7 @@ header {
     transform: translateY(-50%) translateX(-2px);
 }
 
-/* ZONE DROITE (Historique) */
+/* historique */
 .preview {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -232,7 +232,7 @@ header {
     margin-bottom: 10px;
 }
 
-/* Style des liens dans la zone de droite */
+/* liens historique */
 .preview a {
     position: relative;
     text-decoration: none;
@@ -244,12 +244,4 @@ header {
 .preview a:hover {
     color: #00489a !important;
     text-decoration: none !important;
-}
-
-/* Ligne séparatrice des langues */
-hr {
-    border: none;
-    height: 2px; /* Épaisseur de la ligne */
-    background-color: #a54200; /* Couleur orange */
-    margin: 10px 0; /* Marge autour de la ligne */
 }

@@ -14,11 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const lastDate = new Date(lastVisit);
         lastDate.setHours(0, 0, 0, 0);
 
-        // Si l'utilisateur s'est connecté **hier**, incrémente le streak
+        // incrémente le streak
         if (today.getTime() - lastDate.getTime() === 86400000) { 
             streak++;
         }
-        // Si l'utilisateur s'est connecté après plus d'un jour, reset le streak
+        // reset le streak
         else if (today.getTime() - lastDate.getTime() > 86400000) { 
             streak = 1;
         }

@@ -1,18 +1,18 @@
-/* STYLES GLOBAUX */
+/* globaux */
 html, body {
-  height: 100dvh; /* dynamic viewport height pour mobile */
+  height: 100dvh; /* affichage tel buvable */
 }
-/* Assure que le body et le html prennent exactement 100% de la hauteur */
+
 html, body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: black; /* anciennement transparent */
+  background-color: black;
   color: #333;
-  height: 100vh; /* Change min-height en height pour éviter le scroll */
-  overflow: hidden; /* Supprime tout scroll inutile */
+  height: 100vh;
+  overflow: hidden;
 }
-/* HEADER (Bandeau) */
+/* bandeau */
 header {
   background-color: #ffffff;
   padding: 10px 20px;
@@ -22,22 +22,22 @@ header {
   min-height: 70px;
   border-bottom: 1px solid #ccc;
   position: relative;
-  z-index: 0; /* Au-dessus de la vidéo et de l’overlay */
+  z-index: 0;
 }
 
-/* Logo */
+/* logo */
 .logo-container img {
   max-height: 75px;
 }
 
-/* Centrage du menu */
+/* centrage menu */
 .nav-center {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
 
-/* BARRE DE NAVIGATION */
+/* navbar */
 .main-nav ul {
   display: flex;
   gap: 30px;
@@ -46,21 +46,21 @@ header {
   padding: 0;
 }
 
-/* Style des liens */
+/* liens */
 .main-nav li {
   position: relative;
   font-size: 16px;
   font-weight: bold;
 }
 
-/* Liens standards */
+/* liens */
 .main-nav a {
   text-decoration: none;
   color: #FF6600;
   font-weight: bold;
 }
 
-/* Triangle sous les liens */
+/* anim triangle bandeau */
 .main-nav li .triangle {
   position: absolute;
   bottom: -17.5px;
@@ -75,27 +75,26 @@ header {
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Affichage du triangle au survol */
 .main-nav li:hover .triangle {
   opacity: 1;
 }
 
-/* CONTENEUR PRINCIPAL POUR CENTRER LES ÉLÉMENTS */
+/* conteneur global */
 .main-container {
-  display: flex; /* Utilise flexbox pour centrer les éléments */
-  flex-direction: column; /* Aligne les éléments verticalement */
-  align-items: center; /* Centre les éléments horizontalement */
-  justify-content: center; /* Centre les éléments verticalement */
-  height: 90vh; /* Prend 90% de la hauteur de la fenêtre */
-  text-align: center; /* Centre le texte horizontalement */
-  gap: 30px; /* Ajoute un espace entre les éléments */
-  padding: 20px; /* Ajoute un peu d'espace autour des éléments */
-  box-sizing: border-box; /* Évite les débordements */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  text-align: center;
+  gap: 30px;
+  padding: 20px;
+  box-sizing: border-box;
   position: relative;
-  z-index: 0; /* Au-dessus de la vidéo et de l’overlay */
+  z-index: 0;
 }
 
-/* TITRE */
+/* titre */
 .titre_accueil {
   font-weight: bold;
   color: white;
@@ -109,23 +108,7 @@ header {
     0 0 25px rgba(237, 112, 45, 0.2);
 }
 
-/* BARRE DE PROGRESSION
-.progress-container {
-  width: 50%;
-  height: 10px;
-  background-color: #a54200;
-  border-radius: 5px;
-}
-
-.progress-bar {
-  width: 61.8%;
-  height: 100%;
-  background-color: white;
-  border-radius: 5px;
-}
-*/
-
-/* BOUTON */
+/* bouton commencer cours */
 .cta-button {
   display: inline-block;
   padding: 15px 25px;
@@ -147,7 +130,7 @@ header {
   transform: scale(1.05);
 }
 
-/* CONTENEUR DU STREAK */
+/* conteneur streak */
 #streak-container {
   font-size: 1.5rem;
   font-weight: bold;
@@ -162,6 +145,7 @@ header {
 
 }
 
+/* animation background */
 #bg-video {
   position: fixed;
   top: 50%;
@@ -178,5 +162,5 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* noir avec 40% d'opacité */
+  background-color: rgba(0, 0, 0, 0.7);
 }

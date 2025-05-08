@@ -8,33 +8,33 @@ document.addEventListener("DOMContentLoaded", function () {
             Object.keys(data).forEach(coursName => {
                 const coursData = data[coursName];
 
-                // 📌 Création du conteneur du cours
+                // Création du conteneur du cours
                 const coursDiv = document.createElement("div");
                 coursDiv.classList.add("cours-container");
 
-                // 📌 Ajout du titre du cours
+                // Ajout du titre du cours
                 const coursTitle = document.createElement("div");
                 coursTitle.classList.add("cours-title");
                 coursTitle.textContent = `${coursName} ⌄`;
 
-                // 📌 Création du menu déroulant
+                // Création du menu déroulant
                 const dropdownContent = document.createElement("div");
-                dropdownContent.classList.add("dropdown-content");          //le dropdown menu n'est pas tres user-fridendly, il faudrait plutot integrer le dropdown dans le nav bar
+                dropdownContent.classList.add("dropdown-content"); //le dropdown menu n'est pas tres user-fridendly, il faudrait plutot integrer le dropdown dans le nav bar
 
-                // 📌 Lien vers le notebook
+                // Lien vers le notebook
                 const notebookLink = document.createElement("a");
                 notebookLink.href = coursData.notebook;
                 notebookLink.textContent = "📖 Ouvrir le notebook";
                 notebookLink.target = "_blank";
                 dropdownContent.appendChild(notebookLink);
 
-                // 📌 Ajout du titre "Ressources"
+                // Ajout du titre "Ressources"
                 const ressourcesTitle = document.createElement("div");
                 ressourcesTitle.classList.add("dropdown-title");
                 ressourcesTitle.textContent = "Ressources :";
                 dropdownContent.appendChild(ressourcesTitle);
 
-                // 📌 Ajout des ressources
+                // Ajout des ressources
                 coursData.ressources.forEach(ressource => {
                     const ressourceLink = document.createElement("a");
                     ressourceLink.href = ressource.url;
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     dropdownContent.appendChild(ressourceLink);
                 });
 
-                // 📌 Ajouter les éléments au conteneur du cours
+                // Ajouter les éléments au conteneur du cours
                 coursDiv.appendChild(coursTitle);
                 coursDiv.appendChild(dropdownContent);
                 coursContainer.appendChild(coursDiv);
@@ -61,5 +61,5 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             });
         })
-        .catch(error => console.error("❌ Erreur lors du chargement des ressources :", error));
+        .catch(error => console.error("Erreur lors du chargement des ressources :", error));
 });

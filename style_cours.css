@@ -1,4 +1,4 @@
-/* STYLES GLOBAUX */
+/* globaux */
 html, body {
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@ html, body {
     scrollbar-width: none;
 }
 
-/* HEADER (Bandeau) */
+/* bandeau */
 header {
     background-color: #ffffff;
     padding: 10px 20px;
@@ -20,19 +20,19 @@ header {
     z-index: 0; /* Au-dessus de la vidéo et de l’overlay */
 }
 
-/* Logo */
+/* logo */
 .logo-container img {
     max-height: 75px; /* Ajuste la taille du logo */
 }
 
-/* Centrage du menu */
+/* centrer menu */
 .nav-center {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
-/* BARRE DE NAVIGATION */
+/* navbar */
 .main-nav ul {
     display: flex;
     gap: 30px;
@@ -41,7 +41,7 @@ header {
     padding: 0;
 }
 
-/* Style des liens */
+/* liens */
 .main-nav li {
     position: relative;
     font-size: 16px;
@@ -49,19 +49,19 @@ header {
     cursor: pointer;
 }
 
-/* Liens standards */
+/* liens */
 .main-nav a {
     text-decoration: none;
     color: #FF6600;
     font-weight: bold;
 }
 
-/* Couleur des liens au survol */
+/* liens */
 .main-nav a:hover {
     color: #a54200;
 }
 
-/* Triangle sous les liens */
+/* anim triangle bandeau */
 .main-nav li .triangle {
     position: absolute;
     bottom: -17.5px;
@@ -76,49 +76,25 @@ header {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Affichage du triangle au survol */
+/* affichage triangle */
 .main-nav li:hover .triangle {
     opacity: 1;
 }
 
-/* TODO: Style pour le menu déroulant */
-/* .dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
-
-.main-nav li:hover .dropdown {
-    display: block;
-}
-.dropdown li {
-    width: 200px;
-}
-  
-.dropdown a {
-    padding: 10px;
-} */
-
-/* COULEURS DES LIENS VISITÉS */
+/* liens */
 .main-nav a:visited {
     color: #FF6600 !important;
     text-decoration: none !important;
 }
 
-/* Zone centrale pour écrire du contenu */
+/* effets titre */
 .content-area {
-    width: 80%; /* Ajuste la largeur à 80% de la page */
-    max-width: 900px; /* Empêche la zone de devenir trop large */
-    background-color: #ffffff; /* Fond blanc pour le contraste */
-    padding: 20px; /* Espacement interne */
-    margin: 30px auto; /* Centre la zone */
-    border-radius: 8px; /* Coins arrondis */
+    width: 80%;
+    max-width: 900px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 8px;
     box-shadow:
         0 0 5px rgba(237, 112, 45, 1),
         0 0 10px rgba(237, 112, 45, 0.8),
@@ -127,61 +103,39 @@ header {
         0 0 25px rgba(237, 112, 45, 0.2);
 }
 
-/* Style du texte */
+/* texte */
 .content-area h2 {
     text-align: center;
     color: #FF6600; /* Couleur orange */
 }
 
-/* Style des liens */
+/* liens */
 .content-area p {
     font-size: 16px;
     line-height: 1.6;
     color: #333;
 }
 
-/* Conteneur des liens */
+/* conteneur liens */
 .liens_cours {
-    text-align: center; /* ✅ Centre les liens horizontalement */
-    margin: 0px 0; /* ✅ Espacement entre chaque lien */
+    text-align: center;
+    margin: 0px 0;
 }
 
-/* Style des liens */
+/* liens */
 .liens_cours a {
-    display: inline-block; /* ✅ S'adapte à la taille du texte */
-    position: relative; /* ✅ Permet au triangle de se positionner correctement */
-    padding-right: 20px; /* ✅ Espace entre le texte et le triangle */
-    color: #FF6600 !important;
-    text-decoration: none !important;
-    font-size: 18px; /* ✅ Ajuste la taille du texte */
-    white-space: nowrap; /* ✅ Empêche le texte de passer à la ligne */
-    padding: 10px 15px; /* ✅ Ajoute de l'espace autour du texte */
-    border-radius: 5px; /* ✅ Arrondi léger */
+    display: inline-block;
+    position: relative;
+    padding-right: 20px;
+    color: #FF6600 !important; /* obligé de mettre important sinon manque de prio et z-index marche pas */
+    text-decoration: none !important; /* pareil qu'en haut */
+    font-size: 18px;
+    white-space: nowrap;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
-/* Triangle à droite des liens */
-.liens_cours a::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: -15px; /* ✅ Place le triangle juste après le texte */
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
-    border-right: 12px solid #FF6600; /* ✅ Triangle pointant à gauche */
-    opacity: 0; /* ✅ Caché par défaut */
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-/* Affichage du triangle au survol */
-.liens_cours a:hover::after {
-    opacity: 1;
-    transform: translateY(-50%) translateX(2px); /* ✅ Animation douce */
-}
-
-/* 📌 Conteneur principal des cours */
+/* conteneur cours */
 .cours-container {
     position: relative;
     width: 80%;
@@ -194,12 +148,12 @@ header {
     transition: background 0.3s ease-in-out;
 }
 
-/* 📌 Changer le fond au survol */
+/* fix */
 .cours-container:hover {
     background: #f5f5f5;
 }
 
-/* 📌 Titre des cours */
+/* titre cours */
 .cours-title {
     font-size: 18px;
     font-weight: bold;
@@ -207,7 +161,7 @@ header {
     padding: 10px;
 }
 
-/* 📌 Menu déroulant des ressources */
+/* dropdown cours */
 .dropdown-content {
     display: none; /* Caché par défaut */
     background: #fff;
@@ -217,12 +171,12 @@ header {
     margin-top: 5px;
 }
 
-/* 📌 Afficher le menu déroulant au survol */
+/* affichage dropdown */
 .cours-container.active .dropdown-content {
-    display: block;
+    display: block; /* fix avec clique forcé sinon bug */
 }
 
-/* 📌 Titres des ressources */
+/* titres ressources */
 .dropdown-title {
     font-size: 16px;
     font-weight: bold;
@@ -230,7 +184,7 @@ header {
     margin-top: 5px;
 }
 
-/* 📌 Liens des ressources */
+/* liens ressources */
 .dropdown-content a {
     display: block;
     color: #333;
@@ -243,29 +197,16 @@ header {
     text-decoration: underline;
 }
 
-/* 📌 Permet d'afficher le menu déroulant en évitant les fermetures brutales */
+/* fix bug dropdown */
 .cours-container {
-    position: relative; /* ✅ Nécessaire pour la gestion du dropdown */
+    position: relative;
 }
 
 .cours-container:hover::after {
     display: block;
 }
 
-/* 📌 Ajoute une zone invisible sous le dropdown pour éviter la fermeture immédiate */
-.cours-container::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 15px; /* ✅ Crée un espace tampon sous le menu */
-    bottom: -15px; /* ✅ Empêche la fermeture brutale */
-    left: 0;
-    background: transparent;
-}
-
-/* ajout id diaporama pour customiser pareil que les autres */
-/* il faudrait eventuellement faire du menage dans le css si on a le temps */
-
+/* lien custom pour standout du diapo plaidoire */
 #diaporama {
     font-size: 18px;
     font-weight: bold;

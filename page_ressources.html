@@ -33,29 +33,27 @@
       </div>
     </header>
 
-    <!-- 📌 Conteneur principal -->
     <div class="container">
-      <!-- 📌 Zone Sommaire -->
+      <!-- Sommaire -->
       <aside class="sidebar">
         <h2>Sommaire</h2>
         <ul id="sommaire"></ul>
       </aside>
 
-      <!-- 📌 Zone Centrale -->
+      <!-- Ressources -->
       <main class="main-content">
         <h2>Ressources</h2>
         <div id="ressources-container"></div>
-        <!-- 📌 Les ressources seront générées ici -->
       </main>
 
-      <!-- 📌 Zone Historique -->
+      <!-- Historique -->
       <aside class="preview">
         <h2>Dernières ressources ouvertes</h2>
         <ul id="historique"></ul>
       </aside>
     </div>
 
-    <!-- 📌 Script pour charger dynamiquement le sommaire et les ressources -->
+    <!-- Script pour le sommaire et les ressources -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const ressourcesContainer = document.getElementById(
@@ -72,13 +70,13 @@
             Object.keys(data).forEach((coursName) => {
               const coursData = data[coursName];
 
-              // 📌 Création du titre du chapitre dans la zone centrale
+              // titre du chapitre
               const chapterTitle = document.createElement("h4");
               chapterTitle.textContent = coursName;
               chapterTitle.id = coursName.replace(/\s+/g, "-").toLowerCase();
               ressourcesContainer.appendChild(chapterTitle);
 
-              // 📌 Création de la liste des ressources
+              // liste des ressources
               const ressourceList = document.createElement("ul");
 
               coursData.ressources.forEach((ressource) => {
@@ -88,7 +86,7 @@
                 ressourceLink.textContent = ressource.text;
                 ressourceLink.target = "_blank";
 
-                // 📌 Sauvegarde dans l'historique au clic
+                // Sauvegarde dans l'historique au clic
                 ressourceLink.addEventListener("click", function () {
                   saveToHistorique(coursName, ressource.text, ressource.url);
                 });
@@ -99,13 +97,13 @@
 
               ressourcesContainer.appendChild(ressourceList);
 
-              // 📌 Ajouter au sommaire
+              // Ajouter au sommaire
               const sommaireItem = document.createElement("li");
               const sommaireLink = document.createElement("a");
               sommaireLink.href = `#${chapterTitle.id}`;
               sommaireLink.textContent = coursName;
 
-              // 📌 Ajout du scroll limité à `.main-content`
+              // fix bug scroll
               sommaireLink.addEventListener("click", function (event) {
                 event.preventDefault();
                 const target = document.getElementById(chapterTitle.id);
@@ -119,18 +117,18 @@
               sommaireContainer.appendChild(sommaireItem);
             });
 
-            // 📌 Charger l'historique sauvegardé
+            // Charger l'historique sauvegardé
             loadHistorique();
           })
           .catch((error) =>
             console.error(
-              "❌ Erreur lors du chargement des ressources :",
+              "Erreur lors du chargement des ressources :",
               error
             )
           );
       });
 
-      // 📌 Fonction pour sauvegarder une ressource dans l'historique
+      // sauvegarder une ressource dans l'historique
       function saveToHistorique(coursName, ressourceText, ressourceURL) {
         let historique = JSON.parse(localStorage.getItem("historique")) || [];
 
@@ -152,7 +150,7 @@
         loadHistorique();
       }
 
-      // 📌 Fonction pour charger l'historique depuis `localStorage`
+      // charger l'historique depuis `localStorage`
       function loadHistorique() {
         const historiqueContainer = document.getElementById("historique");
         historiqueContainer.innerHTML = "";
