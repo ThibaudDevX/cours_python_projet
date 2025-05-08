@@ -1,92 +1,106 @@
 {
-    "Introduction à Python": {
+    "1 - Introduction à Python": {
         "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/1_introduction.ipynb",
         "ressources": [
-            { "text": "C'est quoi Python ? (FR)", "url": "https://fr.wikipedia.org/wiki/Python_(langage)" },
-            { "text": "Pourquoi apprendre Python ? (FR)", "url": "https://www.lebigdata.fr/pourquoi-apprendre-python" },
-            { "text": "Les avantages et inconvénients (FR)", "url": "https://www.youtube.com/watch?v=pgRsKEUcikc" },
-            { "text": "Pros and cons (EN)", "url": "https://www.youtube.com/watch?v=Ou_hSDxzjMI&t=1s" },
+            { "text": "C'est quoi Python ?", "url": "https://fr.wikipedia.org/wiki/Python_(langage)" },
+            { "text": "Pourquoi apprendre Python ?", "url": "https://www.lebigdata.fr/pourquoi-apprendre-python" },
+            { "text": "Les avantages et inconvénients", "url": "https://www.youtube.com/watch?v=pgRsKEUcikc" },
+            { "text": "Pros and cons", "url": "https://www.youtube.com/watch?v=Ou_hSDxzjMI&t=1s" },
             { "text": "Téléchargement Python", "url": "https://www.python.org/downloads/" },
-            {"text": "Coding Bat, plateforme d'exos d'entrainement", "url": "https://codingbat.com/python" }
+            { "text": "Coding Bat, plateforme d'exos d'entrainement", "url": "https://codingbat.com/python" }
             
         ]
     },
-    "Variables et Types": {
+    "2 - Variables et Types": {
         "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/2_variables_types_interaction.ipynb",
         "ressources": [
-            { "text": "Les variables (complet) (FR)", "url": "https://diveintopython.org/fr/learn/variables" },
-            { "text": "Variables (EN)", "url": "https://www.w3schools.com/python/python_variables.asp" },
-            { "text": "Types (EN)", "url": "https://www.w3schools.com/python/python_datatypes.asp" },
+            { "text": "Variables et Types - DiveInPython", "url": "https://diveintopython.org/fr/learn/variables" },
+            { "text": "Variables et Types - DataBird", "url": "https://www.data-bird.co/blog/guide-variables-python" },
+            { "text": "Variables et Types - YouTube", "url": "https://www.youtube.com/watch?v=vHmiEtdN1c4" },
+            { "text": "Variables - W3Schools", "url": "https://www.w3schools.com/python/python_variables.asp" },
+            { "text": "Types - W3Schools", "url": "https://www.w3schools.com/python/python_datatypes.asp" },
+            { "text": "Variables and Types - YouTube", "url": "https://m.youtube.com/watch?v=7IoQ5BGkTJo" },
             { "text": "Exos Coding Bat", "url": "https://codingbat.com/python/Warmup-1" }
         ]
     },
-    "Les Conditions": {
+    "3 - Les Conditions": {
         "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/3_conditions.ipynb",
         "ressources": [
-            { "text": "Les conditions W3", "url": "https://www.w3schools.com/python/python_conditions.asp" },
-            { "text": "Les conditions GFG", "url": "https://www.geeksforgeeks.org/conditional-statements-in-python/" },
-            { "text": "Les conditions ORG", "url": "https://pythonbasics.org/if-statements/" },
+            { "text": "Conditions - PythonDoctor", "url": "https://python.doctor/page-apprendre-conditions-structures-conditionnelles-if-else-python-cours-debutant" },
+            { "text": "Conditions - YouTube", "url": "https://www.youtube.com/watch?v=_AgUOsvMt8s" },
+            { "text": "Conditions - PythonBasics", "url": "https://pythonbasics.org/if-statements/" },
+            { "text": "Conditions - GeeksForGeeks", "url": "https://www.geeksforgeeks.org/conditional-statements-in-python/" },
+            { "text": "Conditions - W3Schools", "url": "https://www.w3schools.com/python/python_conditions.asp" },
+            { "text": "Conditions - YouTube", "url": "https://www.youtube.com/watch?v=vsVGPcfxEiA" },
             { "text": "Exos Coding Bat", "url": "https://codingbat.com/python/Warmup-1"}
         ]
     },
-    "Les Boucles": {
+    "4 - Les Boucles": {
         "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/4_boucles.ipynb",
         "ressources": [
-            { "text": "Les boucles CP", "url": "https://courspython.com/boucles.html" },
-            { "text": "Les boucles W3", "url": "https://www.w3schools.com/python/python_for_loops.asp" },
-            { "text": "La boucle for ORG", "url": "https://wiki.python.org/moin/ForLoop" }
+            { "text": "Boucles - PythonDoctor", "url": "https://python.doctor/page-apprendre-boucles-python-loop" },
+            { "text": "Boucles - CoursPython", "url": "https://courspython.com/boucles.html" },
+            { "text": "Boucles - YouTube", "url": "https://www.youtube.com/watch?v=Vg4ddGHznv0" },
+            { "text": "Loops - GeeksForGeeks", "url": "https://www.geeksforgeeks.org/loops-in-python" },
+            { "text": "Loops - WsCube", "url": "https://www.wscubetech.com/resources/python/loops" },
+            { "text": "Loops - YouTube", "url": "https://www.youtube.com/watch?v=23vCap6iYSs&pp=0gcJCdgAo7VqN5tD" }
         ]
     },
-    "Les Chaînes de caractères": {
+    "5 - Les Chaînes de caractères": {
         "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/5_chaines_caracteres.ipynb",
         "ressources": [
-            { "text": "Introduction aux Strings", "url": "https://realpython.com/python-strings/" },
-            { "text": "Les bases des chaînes", "url": "https://www.w3schools.com/python/python_strings.asp" },
-            { "text": "Les méthodes des chaînes", "url": "https://www.w3schools.com/python/python_ref_string.asp" },
+            { "text": "Chaînes - Tavenard", "url": "https://rtavenar.github.io/poly_python/content/chaines.html" },
+            { "text": "Chaînes - ESIEE", "url": "https://perso.esiee.fr/~courivad/python/chapters/05-chaines.html" },
+            { "text": "Manipulation Chaînes - ProgHisto", "url": "https://programminghistorian.org/fr/lecons/manipuler-chaines-caracteres-python" },
+            { "text": "Chaînes - YouTube", "url": "https://www.youtube.com/watch?v=jphFlnlGDbw" },
+            { "text": "Strings - W3Schools", "url": "https://www.w3schools.com/python/python_strings.asp" },
+            { "text": "Strings - GeeksForGeeks", "url": "https://www.geeksforgeeks.org/python-string/" },
+            { "text": "String Methods - W3Schools", "url": "https://www.w3schools.com/python/python_ref_string.asp" },
+            { "text": "String - YouTube", "url": "https://www.youtube.com/watch?v=k9TUPpGqYTo" },
             { "text": "Exos Coding Bat", "url": "https://codingbat.com/python/String-1"}
         ]
     },
-    "Les Fonctions": {
+    "6 - Les Fonctions": {
         "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/6_fonctions.ipynb",
         "ressources": [
-            { "text": "Les boucles CP", "url": "https://courspython.com/boucles.html" },
-            { "text": "Les boucles W3", "url": "https://www.w3schools.com/python/python_for_loops.asp" },
-            { "text": "La boucle for ORG", "url": "https://wiki.python.org/moin/ForLoop" }
+            { "text": "Fonctions - CoursPython", "url": "https://courspython.com/fonctions.html" },
+            { "text": "Fonctions - PythonDoctor", "url": "https://python.doctor/page-apprendre-creer-fonction-en-python" },
+            { "text": "Fonctions - YouTube", "url": "https://www.youtube.com/watch?v=uFWYSSsJ_JE" },
+            { "text": "Functions - W3Schools", "url": "https://www.w3schools.com/python/python_functions.asp" },
+            { "text": "Functions - PythonDoctor", "url": "https://www.programiz.com/python-programming/function" },
+            { "text": "Functions - YouTube", "url": "https://www.youtube.com/watch?v=zvzjaqMBEso" }
         ]
     },
-    "Les Listes": {
+    "7 - Les Listes": {
         "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/7_listes.ipynb",
         "ressources": [
-            { "text": "Les boucles CP", "url": "https://courspython.com/boucles.html" },
-            { "text": "Les boucles W3", "url": "https://www.w3schools.com/python/python_for_loops.asp" },
-            { "text": "La boucle for ORG", "url": "https://wiki.python.org/moin/ForLoop" },
-            { "text": "Exos Coding Bat", "url": "https://codingbat.com/python/Warmup-2" }
+            { "text": "Listes - PythonDoctor", "url": "https://python.doctor/page-apprendre-listes-list-tableaux-tableaux-liste-array-python-cours-debutant" },
+            { "text": "Listes - Docstring", "url": "https://www.docstring.fr/glossaire/liste"},
+            { "text": "Listes - YouTube", "url": "https://www.youtube.com/watch?v=kyxF5eH3Kic" },
+            { "text": "Lists - W3Schools", "url": "https://www.w3schools.com/python/python_lists.asp" },
+            { "text": "Lists - GoogleDev", "url": "https://developers.google.com/edu/python/lists" },
+            { "text": "Lists - YouTube", "url": "https://www.youtube.com/watch?v=jgNB4GN1UaQ" }
         ]
     },
-    "Les Dictionnaires": {
+    "8 - Les Dictionnaires": {
         "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/8_dictionnaires.ipynb",
         "ressources": [
-            { "text": "Les boucles CP", "url": "https://courspython.com/boucles.html" },
-            { "text": "Les boucles W3", "url": "https://www.w3schools.com/python/python_for_loops.asp" },
-            { "text": "La boucle for ORG", "url": "https://wiki.python.org/moin/ForLoop" }
+            { "text": "Dictionnaires - CoursPython", "url": "https://courspython.com/dictionnaire.html" },
+            { "text": "Dictionnaires - PythonDoctor", "url": "https://python.doctor/page-apprendre-dictionnaire-python" },
+            { "text": "Dictionnaires - YouTube", "url": "https://www.youtube.com/watch?v=a10AeJ_o-44" },
+            { "text": "Dictionaries - W3Schools", "url": "https://www.w3schools.com/python/python_dictionaries.asp" },
+            { "text": "Dictionaries - GeeksForGeeks", "url": "https://www.geeksforgeeks.org/python-dictionary/" },
+            { "text": "Dictionaries - YouTube", "url": "https://www.youtube.com/watch?v=zdVdqTLk8O0" }
         ]
     },
-    "Les Bibliothèques": {
+    "9 - Les Bibliothèques": {
         "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/9_bibliotheques.ipynb",
         "ressources": [
-            { "text": "Les boucles CP", "url": "https://courspython.com/boucles.html" },
-            { "text": "Les boucles W3", "url": "https://www.w3schools.com/python/python_for_loops.asp" },
-            { "text": "La boucle for ORG", "url": "https://wiki.python.org/moin/ForLoop" }
+            { "text": "Bibliothèques les plus utilisées", "url": "https://www.wildcodeschool.com/fr-fr/blog/les-10-biblioth%C3%A8ques-python-incontournables-en-2024#:~:text=En%202023%2C%20les%20biblioth%C3%A8ques%20Python,dans%20leurs%20projets%20professionnels%E2%80%8B." },
+            { "text": "Popular python libraries", "url": "https://www.wscubetech.com/resources/python/libraries" }
         ]
     },
-    "Les fichiers": {
-        "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/10_fichiers.ipynb",
-        "ressources": [
-            { "text": "Les boucles CP", "url": "https://courspython.com/boucles.html" },
-            { "text": "Les boucles W3", "url": "https://www.w3schools.com/python/python_for_loops.asp" },
-            { "text": "La boucle for ORG", "url": "https://wiki.python.org/moin/ForLoop" }
-        ]
-    }, "L2 : Introduction a la Programmation Orientée Objet en Python": {
+    "L2 : Introduction a la Programmation Orientée Objet en Python": {
         "notebook": "https://colab.research.google.com/github/ThibaudDevX/cours_python_projet/blob/main/notebooks/cours_1_L2.ipynb",
         "ressources": [
             { "text": "La programmation orientée objet P", "url": "https://python.developpez.com/cours/apprendre-python-3/?page=la-programmation-orientee-objet" },
