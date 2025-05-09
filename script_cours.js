@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Création du menu déroulant
                 const dropdownContent = document.createElement("div");
-                dropdownContent.classList.add("dropdown-content"); //le dropdown menu n'est pas tres user-fridendly, il faudrait plutot integrer le dropdown dans le nav bar
+                dropdownContent.classList.add("dropdown-content");
 
                 // Lien vers le notebook
                 const notebookLink = document.createElement("a");
