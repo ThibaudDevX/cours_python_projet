@@ -1,20 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
     const streakCountElement = document.getElementById("streak-count");
 
-    // Récupérer les données du streak depuis localStorage
+    // recup les donnees (sur le local)
     let lastVisit = localStorage.getItem("lastVisit");
     let streak = parseInt(localStorage.getItem("streak")) || 0;
 
-    // Obtenir la date actuelle (sans l'heure)
+    // recup date (sans heure)
     const today = new Date();
     today.setHours(0, 0, 0, 0);
 
-    // Vérifier si une date précédente existe
+    // verif date derniere co
     if (lastVisit) {
         const lastDate = new Date(lastVisit);
         lastDate.setHours(0, 0, 0, 0);
 
-        // incrémente le streak
+        // incremente le streak
         if (today.getTime() - lastDate.getTime() === 86400000) { 
             streak++;
         }
@@ -23,13 +23,12 @@ document.addEventListener("DOMContentLoaded", function () {
             streak = 1;
         }
     } else {
-        streak = 1; // Premier jour de connexion
+        streak = 1; // jour 1
     }
 
-    // Sauvegarder la nouvelle date et le streak
+    // save date co
     localStorage.setItem("lastVisit", today);
     localStorage.setItem("streak", streak);
 
-    // Afficher le streak
     streakCountElement.textContent = streak;
 });
