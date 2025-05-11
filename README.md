@@ -1,46 +1,27 @@
-# 🐍 Python Course - Learning Project  
+# Python en MIASHS
 
-Welcome to **cours_python_projet**, an educational project designed to learn **Python** step by step.  
-This repository contains **lessons, exercises, and resources** to help you understand Python fundamentals and move toward advanced concepts.
+Ce projet a pour but de fournir aux étudiants une plateforme 
+d'apprentissage de Python faite par les étudiants, pour les étudiants.
 
----
+Cette plateforme ce présente sous forme d'un site web mettant en avant
+des cours ainsi que des ressources pour faire progresser les étudiant.e.s.
 
-## 📌 Project Objectives
-- 📖 Learn **Python** progressively.
-- 💡 Practice with **exercises and hands-on projects**.
-- 🎯 Structure learning from **beginner to advanced**.
-- 🚀 Build a solid foundation for **real-world applications**.
+Les cours sont construits autour d'une histoire dans l'optique de créer
+une continuité d'apprentissage de façon ludique afin d'étudier de façon
+active et d'impliquer les étudiant.e.s dans leur apprentissage.
 
----
+## Comment utiliser ce projet
 
-## 📂 Project Structure
-📁 `page_cours/` → Course materials in **Markdown & Jupyter Notebooks**  
-📁 `page_ressources/` → Documentation, useful links  
-📁 `style/` → CSS files for web styling  
-📜 `README.md` → This file  
+Le projet est accessible de façon standard en cliquant sur [ce lien](https://thibauddevx.github.io/cours_python_projet/) pour avoir le projet à jour.
 
----
+Sinon clonez le projet depuis votre IDE, sur VS Code par exemple: 
+1. Copiez ```https://github.com/ThibaudDevX/cours_python_projet.git```.
+2. Sur VS Code ouvrez une nouvelle fenêtre et cliquez sur ***Clone Git Repository...*** et collez l'url.
+3. Sélectionnez votre dossier où cloner le Repository.
+4. Installez l'extension ***Live Server*** de Ritwick Dey.
+5. Sur ```index.html``` faîtes clique droit et cliquez sur ***Open with Live Server*** ou bien cliquez sur ***Go Live*** en bas à droite de l'écran.
 
-## 🛠️ Installation & Execution
-### 1️⃣ **Clone the repository**
-```bash
-git clone https://github.com/ThibaudDevX/cours_python_projet.git
-cd cours_python_projet
-```
-### 2️⃣ (Optional) Create a virtual environment
-```bash
-python -m venv env
-source env/bin/activate  # On Mac/Linux
-env\Scripts\activate  # On Windows
-```
-### 3️⃣ Install dependencies
-If a requirements.txt file is available:
-```bash
-pip install -r requirements.txt
-```
-### 4️⃣ Launch Jupyter Notebook (for interactive lessons)
-```bash
-jupyter notebook
-```
-
-💻 Developed by: ThibaudDevX
+Vous pouvez aussi télécharger le projet dans son état actuel:
+1. Cliquez sur ***<> Code***
+2. Cliquez sur ***Download ZIP***
+3. Sur votre terminal rendez-vous dans votre dossier et tapez: ```python3 -m http.server 5500``` puis rendez-vous sur votre navigateur et tapez: ```http://localhost:5500```.
