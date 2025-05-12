@@ -22,6 +22,6 @@ Sinon clonez le projet depuis votre IDE, sur VS Code par exemple:
 5. Sur ```index.html``` faîtes clique droit et cliquez sur ***Open with Live Server*** ou bien cliquez sur ***Go Live*** en bas à droite de l'écran.
 
 Vous pouvez aussi télécharger le projet dans son état actuel:
-1. Cliquez sur ***<> Code***
+1. Cliquez sur le bouton vert ***<> Code*** en haut à droite de la page.
 2. Cliquez sur ***Download ZIP***
 3. Sur votre terminal rendez-vous dans votre dossier et tapez: ```python3 -m http.server 5500``` puis rendez-vous sur votre navigateur et tapez: ```http://localhost:5500```.
